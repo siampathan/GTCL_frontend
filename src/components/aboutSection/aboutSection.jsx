@@ -1,3 +1,5 @@
+import CounterUp from "../counterUp/counterUp";
+
 const AboutSection = ({ data }) => {
   let contents = data.content;
   return (
@@ -56,7 +58,8 @@ const AboutSection = ({ data }) => {
                           className={item.className2}
                           data-odometer-final={15}
                         >
-                          {item.endNum}
+                          {/* {item.endNum} */}
+                          <CounterUp data={item.endNum} />
                         </h3>
                         <h3 class="title"> {item.percent} </h3>
                       </div>
