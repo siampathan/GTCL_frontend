@@ -23,6 +23,7 @@ import {
   Cart_empty,
   Country_details,
   Faq_section,
+  Shopp_cart,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
 import OurServices from "./pages/ourServices/ourServices";
@@ -34,6 +35,7 @@ import NotFound from "./pages/notFound/notFound";
 import EmptyCart from "./pages/emptyCart/emptyCart";
 import CountryDetails from "./pages/countryDetails/countryDetails";
 import FaqPage from "./pages/faqPage/faqPage";
+import ShopCart from "./pages/shopCart/shopCart";
 
 function App() {
   return (
@@ -112,6 +114,16 @@ function App() {
               data={Country_details[0]}
               data2={Country_details[1]}
               data3={Country_details[2]}
+            />
+          }
+        />
+        <Route
+          path="/shop-cart"
+          element={
+            <ShopCart
+              data={Shopp_cart[0]}
+              data2={Shopp_cart[1]}
+              data3={Shopp_cart[2]}
             />
           }
         />

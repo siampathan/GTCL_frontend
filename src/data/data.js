@@ -66,6 +66,9 @@ import Country_versity from "../assets/img/institutes/04.png";
 import Faq_icon from "../assets/img/faq/category/01.png";
 import Faq_banner from "../assets/img/faq/ask-question/01.png";
 
+import Shopcart_icon from "../assets/img/related-course/01.jpg";
+import Shopcart_poster from "../assets/img/course/01.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -847,6 +850,111 @@ export const Cart_empty = [
     title: "Empty Cart",
     desc: `Your cart is empty. Keep shopping to find a course!`,
     buttonContent: "Back to homepage",
+  },
+];
+
+export const Shopp_cart = [
+  {
+    title: "Shopping Cart",
+    subtitle: "4 Items in your cart",
+    content: [
+      {
+        imageLink: `${Shopcart_icon}`,
+        title: "Self development- Be your own boss",
+        rate: 4.8,
+        ratingNum: 756,
+        studentsNum: 97538,
+        price: 84.5,
+        buttonContent: "Remove",
+      },
+      {
+        imageLink: `${Shopcart_icon}`,
+        title: "Self development- Be your own boss",
+        rate: 4.8,
+        ratingNum: 756,
+        studentsNum: 97538,
+        price: 84.5,
+        buttonContent: "Remove",
+      },
+      {
+        imageLink: `${Shopcart_icon}`,
+        title: "Self development- Be your own boss",
+        rate: 4.8,
+        ratingNum: 756,
+        studentsNum: 97538,
+        price: 84.5,
+        buttonContent: "Remove",
+      },
+      {
+        imageLink: `${Shopcart_icon}`,
+        title: "Self development- Be your own boss",
+        rate: 4.8,
+        ratingNum: 756,
+        studentsNum: 97538,
+        price: 84.5,
+        buttonContent: "Remove",
+      },
+    ],
+  },
+  {
+    total: "Total",
+    price: 169.98,
+    desc: `Have coupon code?`,
+    buttonContent: "Apply",
+    buttonContent2: "checkout now",
+  },
+  {
+    title: "You might like also",
+    content: [
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+    ],
   },
 ];
 
