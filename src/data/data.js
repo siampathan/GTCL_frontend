@@ -1,0 +1,785 @@
+import Logo from "../assets/img/Logos/logo-black.svg";
+import Homebanner_1 from "../assets/img/shapes/Ellipse-01.png";
+import Homebanner_2 from "../assets/img/shapes/Ellipse-02.png";
+import Homebanner_3 from "../assets/img/shapes/Vector-15.png";
+import Homebanner_4 from "../assets/img/header/plane.png";
+import Homebanner_5 from "../assets/img/icon/location.png";
+import Homebanner_6 from "../assets/img/header/header-img.png";
+
+import Featureimage from "../assets/img/shapes/graduation.png";
+import Featureimage2 from "../assets/img/icon/idea.png";
+import Featureimage3 from "../assets/img/icon/coversation.png";
+import Featureimage4 from "../assets/img/icon/emergency.png";
+
+import Feedbacksimage from "../assets/img/sections/students/student-01.png";
+
+import Destinationimage from "../assets/img/shapes/mountant.png";
+import Destinationimage2 from "../assets/img/shapes/plane.png";
+import Flagimage from "../assets/img/sections/destination/canda.png";
+import Flagimage2 from "../assets/img/sections/destination/usa.png";
+import Flagimage3 from "../assets/img/sections/destination/australia.png";
+import Flagimage4 from "../assets/img/sections/destination/span.png";
+import Flagimage5 from "../assets/img/sections/destination/franch.png";
+import Flagimage6 from "../assets/img/sections/destination/swideen.png";
+import Flagimage7 from "../assets/img/sections/destination/italy.png";
+import StudentLibrary from "../assets/img/sections/about/student-in-library.png";
+
+import Categoryimage from "../assets/img/sections/desipline/foresty.png";
+import Categoryimage2 from "../assets/img/sections/desipline/science.png";
+import Categoryimage3 from "../assets/img/sections/desipline/art.png";
+import Categoryimage4 from "../assets/img/sections/desipline/business.png";
+import Categoryimage5 from "../assets/img/sections/desipline/pc.png";
+import Categoryimage6 from "../assets/img/sections/desipline/book.png";
+import Categoryimage7 from "../assets/img/sections/desipline/click.png";
+import Categoryimage8 from "../assets/img/sections/desipline/french-fry.png";
+import Categoryimage9 from "../assets/img/sections/desipline/news-paper.png";
+import Categoryimage10 from "../assets/img/sections/desipline/first-aid-kit.png";
+import Categoryimage11 from "../assets/img/sections/desipline/law.png";
+import Categoryimage12 from "../assets/img/sections/desipline/enverment.png";
+import Categoryimage13 from "../assets/img/sections/desipline/humanity.png";
+import Categoryimage14 from "../assets/img/sections/desipline/recicle.png";
+
+import Stepimage from "../assets/img/icon/step-01.png";
+
+import NewsSectionimage from "../assets/img/h-blog/01.png";
+import NewsSectionimage2 from "../assets/img/icon/calander.png";
+
+import Aboutimage from "../assets/img/about/01.jpg";
+import AboutIconimage from "../assets/img/icon/icon-and-text/key.svg";
+
+import Chooseimage from "../assets/img/chose-us/01.jpg";
+import ChooseIcon from "../assets/img/icon/icon-and-text/02/01.png";
+
+import ServicesIcon from "../assets/img/services/icon/01.png";
+import ServicesPoster from "../assets/img/services-details/01.png";
+import ServicesPoster2 from "../assets/img/services-details/02.png";
+
+import Teamposter from "../assets/img/team-details/01.jpg";
+import Teamposter2 from "../assets/img/team/style-02/01.png";
+import TeamCountryPoster from "../assets/img/country-details/02.jpg";
+
+export const Navbar_data = [
+  {
+    imageLink: `${Logo}`,
+    title: "Home",
+    content: [
+      {
+        title: "Home One",
+        link: "/",
+      },
+      {
+        title: "Home Two",
+        link: "/home-2",
+      },
+    ],
+    title2: "About Us",
+    link: "/about-us",
+    title3: "Contact Us",
+    link2: "/contact-us",
+  },
+  {
+    title: "Pages",
+    content: [
+      {
+        title: "Our Services",
+        link: "/our-services",
+      },
+      {
+        title: "Services Details",
+        link: "/services-details",
+      },
+      {
+        title: "Team",
+        link: "/team",
+      },
+      {
+        title: "Instructors",
+        link: "/instructors",
+      },
+      {
+        title: "About Instructor",
+        link: "/about-instructor",
+      },
+      {
+        title: "Country Details",
+        link: "/country-details",
+      },
+      {
+        title: "All Course",
+        link: "/all-course",
+      },
+      {
+        title: "All Course with widget",
+        link: "/coursewith-widget",
+      },
+      {
+        title: "Course Details",
+        link: "/course-details",
+      },
+      {
+        title: "Apply Online",
+        link: "/apply-online",
+      },
+      {
+        title: "Shop Cart",
+        link: "/shop-cart",
+      },
+      {
+        title: "FAQ",
+        link: "/faq",
+      },
+      {
+        title: "404",
+        link: "/not-found",
+      },
+      {
+        title: "Cart Empty",
+        link: "/cart-empty",
+      },
+    ],
+  },
+  {
+    title: "Blog",
+    content: [
+      {
+        title: "Blog",
+        link: "/blog",
+      },
+      {
+        title: "Blog Classic",
+        link: "/blog-classic",
+      },
+      {
+        title: "Blog Single",
+        link: "/blog-details",
+      },
+    ],
+  },
+];
+
+export const Home_data = [
+  {
+    subtitle: "SPECIAL OFFER FIRST CUSTOMER",
+    title: "success",
+    title2: "journey start with us!",
+    desc: `Eduplan Education Can Fulfil Your International Education Dream`,
+    desc2: `As Per Your Best Fit with world top universities and collages.`,
+    buttonContent: "Discover",
+    image1: `${Homebanner_1}`,
+    image2: `${Homebanner_2}`,
+    image3: `${Homebanner_3}`,
+    image4: `${Homebanner_4}`,
+    image5: `${Homebanner_5}`,
+    image6: `${Homebanner_6}`,
+  },
+  {
+    imageLink: `${Featureimage}`,
+    content: [
+      {
+        title: "One Stop Study Solution",
+        desc: `Get a full view so you know where to save. Track spending, deta keep tab subscription
+            lorem ipsum text`,
+        imageLink: `${Featureimage2}`,
+      },
+      {
+        title: "One To One Discussion",
+        desc: `Get a full view so you know where to save. Track spending, deta keep tab subscription
+            lorem ipsum text`,
+        imageLink: `${Featureimage3}`,
+      },
+      {
+        title: "End To End Support",
+        desc: `Get a full view so you know where to save. Track spending, deta keep tab subscription
+            lorem ipsum text`,
+        imageLink: `${Featureimage4}`,
+      },
+    ],
+  },
+  {
+    title: "Our students shared their",
+    title2: "visa success stories",
+    subtitle: `FEEDBACKS`,
+    content: [
+      {
+        imageLink: `${Feedbacksimage}`,
+        title: "Annette Black",
+        desc: "University of Alberta ~ Canada",
+      },
+      {
+        imageLink: `${Feedbacksimage}`,
+        title: "Annette Black",
+        desc: "University of Alberta ~ Canada",
+      },
+      {
+        imageLink: `${Feedbacksimage}`,
+        title: "Annette Black",
+        desc: "University of Alberta ~ Canada",
+      },
+      {
+        imageLink: `${Feedbacksimage}`,
+        title: "Annette Black",
+        desc: "University of Alberta ~ Canada",
+      },
+    ],
+  },
+  {
+    title: "Top Destinations",
+    desc: `We have quality partners in variety of destinations around the globe.`,
+    imageLink: `${Destinationimage}`,
+    imageLink2: `${Destinationimage2}`,
+    buttonContent: "apply online",
+    content: [
+      {
+        title: "Canada",
+        imageLink: `${Flagimage}`,
+      },
+      {
+        title: "America",
+        imageLink: `${Flagimage2}`,
+      },
+      {
+        title: "London",
+        imageLink: `${Flagimage3}`,
+      },
+      {
+        title: "Spain",
+        imageLink: `${Flagimage4}`,
+      },
+      {
+        title: "French",
+        imageLink: `${Flagimage5}`,
+      },
+      {
+        title: "Sweden",
+        imageLink: `${Flagimage6}`,
+      },
+      {
+        title: "Italy",
+        imageLink: `${Flagimage7}`,
+      },
+    ],
+  },
+  {
+    imageLink: `${StudentLibrary}`,
+    title: "Moving beyond product innovation to gain a competitive advantage",
+    subtitle: "ABOUT US & EXPERIENCE",
+    desc: `Ouya Education, which is based in Victoria, British Columbia, Canada, frequently deals
+    with issues of employment (recruitment and retention) for temporary foreign workers
+    (TFW), as well as temporary and permanent residency applications and other general
+    immigration matters with Canadian federal departments (IRCC and CBSA).`,
+    desc2: `Education also provides educational consulting services for student- clients who want to
+    study in Canada, and require help with the application process.`,
+    extra: "Core strength",
+    buttonContent: "Get Free Consultation",
+    content: [
+      {
+        title: "Years Experience",
+        endNum: 15,
+        className: `single-counterup color-01`,
+        className2: `odometer odo-title`,
+      },
+      {
+        title: "VISA Approved",
+        endNum: 875,
+        className: `single-counterup color-02`,
+        className2: `odometer odo-title style-01`,
+      },
+      {
+        title: "Admission success",
+        endNum: 96,
+        percent: `%`,
+        className: `single-counterup color-03`,
+        className2: `odometer odo-title style-02`,
+      },
+    ],
+  },
+  {
+    title: "Popular Discipline & Collage",
+    subtitle: "CATEGORIES",
+    button: "Discipline",
+    button2: "Collage",
+    content: [
+      {
+        title: "Agriculture &",
+        subtitle: "Foresty",
+        imageLink: `${Categoryimage}`,
+      },
+      {
+        title: "science",
+        subtitle: "& professional",
+        imageLink: `${Categoryimage2}`,
+      },
+      {
+        title: "Art, Design &",
+        subtitle: "Culture",
+        imageLink: `${Categoryimage3}`,
+      },
+      {
+        title: "Business &",
+        subtitle: " Management",
+        imageLink: `${Categoryimage4}`,
+      },
+      {
+        title: "Computer",
+        subtitle: "Science & IT",
+        imageLink: `${Categoryimage5}`,
+      },
+      {
+        title: "Education &",
+        subtitle: "Training",
+        imageLink: `${Categoryimage6}`,
+      },
+      {
+        title: "Engeneering &",
+        subtitle: "Technology",
+        imageLink: `${Categoryimage7}`,
+      },
+      {
+        title: "Hopitality &",
+        subtitle: "Sports",
+        imageLink: `${Categoryimage8}`,
+      },
+      {
+        title: "Journalism &",
+        subtitle: "Media",
+        imageLink: `${Categoryimage9}`,
+      },
+      {
+        title: "Medicine &",
+        subtitle: "Health",
+        imageLink: `${Categoryimage10}`,
+      },
+      {
+        title: "Law",
+        subtitle: "",
+        imageLink: `${Categoryimage11}`,
+      },
+      {
+        title: "Social Science",
+        subtitle: "",
+        imageLink: `${Categoryimage12}`,
+      },
+      {
+        title: "Humanities",
+        subtitle: "",
+        imageLink: `${Categoryimage13}`,
+      },
+      {
+        title: "Enviromental",
+        subtitle: "Studies",
+        imageLink: `${Categoryimage14}`,
+      },
+    ],
+  },
+  {
+    title: "STEPS",
+    subtitle: "Steps to Get your Destination",
+    content: [
+      {
+        title: "Identify course",
+        subtitle: "country & collage",
+        imageLink: `${Stepimage}`,
+      },
+      {
+        title: "Identify course",
+        subtitle: "country & collage",
+        imageLink: `${Stepimage}`,
+      },
+      {
+        title: "Identify course",
+        subtitle: "country & collage",
+        imageLink: `${Stepimage}`,
+      },
+      {
+        title: "Identify course",
+        subtitle: "country & collage",
+        imageLink: `${Stepimage}`,
+      },
+      {
+        title: "Identify course",
+        subtitle: "country & collage",
+        imageLink: `${Stepimage}`,
+      },
+    ],
+  },
+  {
+    title: "Eduplan Latest Blog",
+    subtitle: "EDUPLAN UPDATES",
+    content: [
+      {
+        imageLink: `${NewsSectionimage}`,
+        calander: `${NewsSectionimage2}`,
+        date: `19th Jan 2022`,
+        time: `12 noon to 4 pm`,
+        title: `Overseas Education Fair Amravati 2023`,
+      },
+      {
+        imageLink: `${NewsSectionimage}`,
+        calander: `${NewsSectionimage2}`,
+        date: `19th Jan 2022`,
+        time: `12 noon to 4 pm`,
+        title: `Overseas Education Fair Amravati 2023`,
+      },
+      {
+        imageLink: `${NewsSectionimage}`,
+        calander: `${NewsSectionimage2}`,
+        date: `19th Jan 2022`,
+        time: `12 noon to 4 pm`,
+        title: `Overseas Education Fair Amravati 2023`,
+      },
+    ],
+  },
+  {
+    title: "Frequently asked question",
+    subtitle: "FAQ",
+    desc: `Still do you have any questions to know? `,
+    desc2: `Feel free to ask our experts here.`,
+    buttonContent: "ASK YOUR QUESTIONS",
+  },
+];
+
+export const About_us = [
+  {
+    title: "About us",
+    desc: `Eduplan student consultancy is one of the renowned international
+    education consultancy firms which assisting overseas students`,
+    desc2: `The head office of Eduplan is located in India which helps all
+    Indian students to get admission into top-ranked universities from the United
+    Kingdom, USA, Australia, Canada,Germany and Sweden. At the same time, we have a very
+    strong relationship with our partner Malaysian, Cyprus and Chinese Universities.`,
+    imageLink: `${Aboutimage}`,
+    buttonContent: " Get Free Consultation",
+    content: [
+      {
+        imageLink: `${AboutIconimage}`,
+        desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
+      },
+      {
+        imageLink: `${AboutIconimage}`,
+        desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
+      },
+      {
+        imageLink: `${AboutIconimage}`,
+        desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
+      },
+    ],
+  },
+  {
+    title: "START EXPLORING COUNTRIES",
+    subtitle: "Meet Experts",
+    desc: `87% of people learning for professional development report
+    career benefits`,
+  },
+  {
+    title: "Why chose us",
+    desc: `87% of people learning for professional development report
+    career benefits`,
+    imageLink: `${Chooseimage}`,
+    content: [
+      {
+        imageLink: `${ChooseIcon}`,
+        title: "Our Vision",
+        desc: `Our vision is to be the leading student consultancy
+        and recruiting agency of the world by satisfying our clients’ in all aspects.`,
+      },
+      {
+        imageLink: `${ChooseIcon}`,
+        title: "Our Vision",
+        desc: `Our vision is to be the leading student consultancy
+        and recruiting agency of the world by satisfying our clients’ in all aspects.`,
+      },
+      {
+        imageLink: `${ChooseIcon}`,
+        title: "Our Vision",
+        desc: `Our vision is to be the leading student consultancy
+        and recruiting agency of the world by satisfying our clients’ in all aspects.`,
+      },
+    ],
+  },
+  {
+    title: "Students who fly abroad",
+    subtitle: "SERVICES",
+  },
+];
+
+export const Our_services = [
+  {
+    title: "Our services",
+    desc: `Lorem ipsum dummy text are used in this section`,
+    content: [
+      {
+        imageLink: `${ServicesIcon}`,
+        title: "Career Counseling",
+        desc: `Lorem Innovate systematically, continuously successfully. Lorem ipsum dummy lorem
+        ipsum dummy text are used here.`,
+      },
+      {
+        imageLink: `${ServicesIcon}`,
+        title: "Career Counseling",
+        desc: `Lorem Innovate systematically, continuously successfully. Lorem ipsum dummy lorem
+        ipsum dummy text are used here.`,
+      },
+      {
+        imageLink: `${ServicesIcon}`,
+        title: "Career Counseling",
+        desc: `Lorem Innovate systematically, continuously successfully. Lorem ipsum dummy lorem
+        ipsum dummy text are used here.`,
+      },
+      {
+        imageLink: `${ServicesIcon}`,
+        title: "Career Counseling",
+        desc: `Lorem Innovate systematically, continuously successfully. Lorem ipsum dummy lorem
+        ipsum dummy text are used here.`,
+      },
+      {
+        imageLink: `${ServicesIcon}`,
+        title: "Career Counseling",
+        desc: `Lorem Innovate systematically, continuously successfully. Lorem ipsum dummy lorem
+        ipsum dummy text are used here.`,
+      },
+      {
+        imageLink: `${ServicesIcon}`,
+        title: "Career Counseling",
+        desc: `Lorem Innovate systematically, continuously successfully. Lorem ipsum dummy lorem
+        ipsum dummy text are used here.`,
+      },
+    ],
+  },
+];
+
+export const Services_details = [
+  {
+    imageLink: `${ServicesPoster}`,
+    title: "Career Counseling",
+    desc: `OEVS is committed to serving the top-class services to help you fulfil your desire to go abroad to pursue your
+    higher study in the best possible institutions in some of the world’s finest countries..`,
+    desc2: ` We have dedicated consultants with ample expertise in this foreign
+    education industry for more than 10 years, making the OEVS one of the top education
+    consultancies in Bangladesh with their most practical advice.`,
+    buttonContent: "Get Free Consultation",
+  },
+  {
+    imageLink: `${ServicesPoster2}`,
+    title: `How we do counseling to our students?`,
+    desc: `Oxford bender chap excuse my French it’s all gone to pot A bit of
+    how’s your father I don’t want no agro dropped a clanger, arse over tit William
+    Harry skive off don’t get shirty with me daft only a quid. Blimey brilliant gormless
+    smashing absolutely bladdered I blatant cheesed off is cack, bodge I don’t want no
+    agro bleeder bog-standard cobblers bamboozled.`,
+    content: [
+      `Well blag pukka cup of tea give us a bell bog-standard Harry
+      boot say barmy William fantastic bits and bobs`,
+      `Cuppa chancer what a plonker bugger all mate barmy do one
+      lost the plot lemon squeezy bamboozled I lurgy, get stuffed!`,
+      `Firm which you can trust based on our expertise and
+      professionalism.`,
+    ],
+  },
+  {
+    imageLink: `${ServicesPoster}`,
+    title: `The result driven career counseling`,
+    desc: `OEVS is committed to serving the top-class services to help you fulfil your desire to go abroad to pursue your
+    higher study in the best possible institutions in some of the world’s finest countries..`,
+    desc2: ` We have dedicated consultants with ample expertise in this foreign
+    education industry for more than 10 years, making the OEVS one of the top education
+    consultancies in Bangladesh with their most practical advice.`,
+    buttonContent: "Get Free Consultation",
+  },
+];
+
+export const Our_team = [
+  {
+    title: "Our Team",
+    desc: `Step forward to your study abroad dream with us`,
+    imageLink: `${Teamposter}`,
+    badgeNum: 12,
+    badgeText: "Years of Experience",
+    desc2: `I went to many educational consultancy firms, talked to many of them but ultimately
+    came back to Eduplan because it clearly stands out from others. It is a very running
+    & experienced firm.`,
+    desc3: `We, as a consultancy firm, have been serving our students since
+    2005 and this is how our students treat us in return. Their good words and
+    references help us growing further and give us strengths to ensure a fastest, finest
+    and quality services toward our beloved students.`,
+    desc4: `Since 2005, we have managed to build up a strong relationship
+    within our partner institutes in abroad which helps us to assure genuine guidance to
+    our students and their parents.`,
+    check_list: [
+      `A firm which you can trust based on expertise and
+      professionalism.`,
+      `We deal with multi-national students which allow us to know and
+      resolve different problems.`,
+    ],
+    buttonContent: "Get Free Consultation",
+  },
+  {
+    title: "Meet Experts",
+    desc: `87% of people learning for professional development report
+    career benefits`,
+    content: [
+      {
+        imageLink: `${Teamposter2}`,
+        title: " Arlene McCoy",
+        position: "Consultants, Eduplan",
+        email: `kenzi.lawson@example.com`,
+        desc: ` I’m Esther Howard working as a senior consultant on
+        Eduplan. Helped many student to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: " Arlene McCoy",
+        position: "Consultants, Eduplan",
+        email: `kenzi.lawson@example.com`,
+        desc: ` I’m Esther Howard working as a senior consultant on
+        Eduplan. Helped many student to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: " Arlene McCoy",
+        position: "Consultants, Eduplan",
+        email: `kenzi.lawson@example.com`,
+        desc: ` I’m Esther Howard working as a senior consultant on
+        Eduplan. Helped many student to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: " Arlene McCoy",
+        position: "Consultants, Eduplan",
+        email: `kenzi.lawson@example.com`,
+        desc: ` I’m Esther Howard working as a senior consultant on
+        Eduplan. Helped many student to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: " Arlene McCoy",
+        position: "Consultants, Eduplan",
+        email: `kenzi.lawson@example.com`,
+        desc: ` I’m Esther Howard working as a senior consultant on
+        Eduplan. Helped many student to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: " Arlene McCoy",
+        position: "Consultants, Eduplan",
+        email: `kenzi.lawson@example.com`,
+        desc: ` I’m Esther Howard working as a senior consultant on
+        Eduplan. Helped many student to keep touch their dream to`,
+      },
+    ],
+  },
+  {
+    imageLink: `${TeamCountryPoster}`,
+    title: " Study in Canada with",
+    subtitle: "Eduplan",
+    desc: `Most of the students struggle to submit their applications to
+    Canadian universities or colleges. It has deadlines and very
+    rare any Canadian institutes consider applications after the
+    deadline. As a reason, we have noticed that many students miss
+    a year and they need to wait until the next intake is open.
+    We, at IECC are dealing with Canadian Universities since 2005
+    and our expertise are well-known about the key deadline which
+    ensure a smooth admission journey.`,
+    desc2: `We have dedicated teams of experts to help students with the
+    entire visa processing and take care of the other things like
+    health cover, insurance, any English language requirements and
+    financial aid.`,
+    buttonContent: "Get Free Consultation",
+  },
+];
+
+export const Instructors_data = [
+  {
+    title: "Our Expert Instructors",
+    subtitle: "Step forward to your study abroad dream with us",
+    content: [
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+      {
+        imageLink: `${Teamposter2}`,
+        title: "Arlene McCoy",
+        position: "Consultants, Eduxon",
+        desc: `I’m Esther Howard working as a senior consultant on Eduxon. Helped many student
+        to keep touch their dream to`,
+      },
+    ],
+  },
+];
+
+export const Contact_us = [
+  {
+    title: "Contact us",
+    desc: `We have professional alliance's with leading Universities and Colleges
+    around the world.`,
+    title2: "Get in touch",
+    address: `2972 Westheimer Rd. Santa Ana, Illinoi
+    85486, India`,
+    phone: `(270) 555-0117 `,
+    phone2: `(270) 589-7395`,
+    email: `nathan.roberts@example.com`,
+    email2: `headoffice@example.com`,
+    title3: "Primary Information",
+    buttonContent: "submit Message",
+  },
+];
+
+export const Not_found = [
+  {
+    imageLink: ``,
+    title: "404",
+    desc: `Don’t panic, we won’t need to put it in nice.`,
+  },
+];
