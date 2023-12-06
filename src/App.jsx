@@ -26,6 +26,8 @@ import {
   Shopp_cart,
   Apply_online,
   About_instructor,
+  Course_widget,
+  All_courses,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
 import OurServices from "./pages/ourServices/ourServices";
@@ -40,6 +42,8 @@ import FaqPage from "./pages/faqPage/faqPage";
 import ShopCart from "./pages/shopCart/shopCart";
 import ApplyOnline from "./pages/applyOnline/applyOnline";
 import AboutInstructor from "./pages/aboutInstructor/aboutInstructor";
+import CourseWidget from "./pages/courseWidget/courseWidget";
+import AllCourses from "./pages/allCourses/allCourses";
 
 function App() {
   return (
@@ -131,6 +135,14 @@ function App() {
               data3={Country_details[2]}
             />
           }
+        />
+        <Route
+          path="all-course"
+          element={<AllCourses data={All_courses[0]} />}
+        />
+        <Route
+          path="all-course-widget"
+          element={<CourseWidget data={Course_widget[0]} />}
         />
         <Route
           path="/apply-online"
