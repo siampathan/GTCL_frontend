@@ -58,6 +58,14 @@ import Teamposter from "../assets/img/team-details/01.jpg";
 import Teamposter2 from "../assets/img/team/style-02/01.png";
 import TeamCountryPoster from "../assets/img/country-details/02.jpg";
 
+import Notfound_poster from "../assets/img/404/01.png";
+
+import Countrydetails_poster from "../assets/img/country-details/01.jpg";
+import Country_versity from "../assets/img/institutes/04.png";
+
+import Faq_icon from "../assets/img/faq/category/01.png";
+import Faq_banner from "../assets/img/faq/ask-question/01.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -778,8 +786,106 @@ export const Contact_us = [
 
 export const Not_found = [
   {
-    imageLink: ``,
+    imageLink: `${Notfound_poster}`,
     title: "404",
     desc: `Don’t panic, we won’t need to put it in nice.`,
+    buttonContent: "Back to homepage",
+  },
+];
+
+export const Country_details = [
+  {
+    title: "Benefit of studying in",
+    subtitle: "Canada",
+    desc: `Canada has developed a first-rate education system with high
+    standards which is globally recognized. Canadian government offers permanent
+    residency opportunity who finished their studies in the country. Canada has ranked
+    as one of the top ten places to live in the world.`,
+    imageLink: `${Countrydetails_poster}`,
+    content: [
+      `Most Universities in Canada are internationally recognized`,
+      `Students prefer to study in Canada due to the quality of
+      teaching which is equal to the degree of USA, Australia, UK.`,
+      `Tuition fees in Canada is around CAD 10,0000 to 30,000 per
+      year which is cheaper than other countries.`,
+      `International students can work while studying and it is
+      quite easy for me to earn my living cost`,
+    ],
+  },
+  {
+    title: "Institutes we Represent",
+    subtitle: "institute",
+    content: [
+      `${Country_versity}`,
+      `${Country_versity}`,
+      `${Country_versity}`,
+      `${Country_versity}`,
+      `${Country_versity}`,
+      `${Country_versity}`,
+    ],
+  },
+  {
+    title: "Study in Canada with",
+    subtitle: "Eduplan",
+    imageLink: `${Countrydetails_poster}`,
+    desc: `Most of the students struggle to submit their applications to
+    Canadian universities or colleges. It has deadlines and very rare any Canadian
+    institutes consider applications after the deadline. As a reason, we have noticed
+    that many students miss a year and they need to wait until the next intake is open.
+    We, at IECC are dealing with Canadian Universities since 2005 and our expertise are
+    well-known about the key deadline which ensure a smooth admission journey.`,
+    desc2: `We have dedicated teams of experts to help students with the entire
+    visa processing and take care of the other things like health cover, insurance, any
+    English language requirements and financial aid.`,
+    buttonContent: "Get Free Consultation",
+  },
+];
+
+export const Cart_empty = [
+  {
+    imageLink: `${Notfound_poster}`,
+    title: "Empty Cart",
+    desc: `Your cart is empty. Keep shopping to find a course!`,
+    buttonContent: "Back to homepage",
+  },
+];
+
+export const Faq_section = [
+  {
+    title: "Help Center",
+    subtitle: "Or Click on individual category to find specific questions",
+    content: [
+      {
+        imageLink: `${Faq_icon}`,
+        title: "Getting Started",
+      },
+      {
+        imageLink: `${Faq_icon}`,
+        title: "Getting Started",
+      },
+      {
+        imageLink: `${Faq_icon}`,
+        title: "Getting Started",
+      },
+      {
+        imageLink: `${Faq_icon}`,
+        title: "Getting Started",
+      },
+      {
+        imageLink: `${Faq_icon}`,
+        title: "Getting Started",
+      },
+      {
+        imageLink: `${Faq_icon}`,
+        title: "Getting Started",
+      },
+    ],
+  },
+  {
+    imageLink: `${Faq_banner}`,
+    title: "Still Have question?",
+    desc: `Can’t find answers you are looking for? No worries. We have
+    expert team to help you with`,
+    buttonContent: "Ask Your question",
   },
 ];

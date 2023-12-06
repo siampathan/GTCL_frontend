@@ -19,6 +19,10 @@ import {
   Our_team,
   Instructors_data,
   Contact_us,
+  Not_found,
+  Cart_empty,
+  Country_details,
+  Faq_section,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
 import OurServices from "./pages/ourServices/ourServices";
@@ -27,6 +31,9 @@ import OurTeam from "./pages/ourTeam/ourTeam";
 import Instructors from "./pages/instructors/instructors";
 import ContactUs from "./components/contactUs/contactUs";
 import NotFound from "./pages/notFound/notFound";
+import EmptyCart from "./pages/emptyCart/emptyCart";
+import CountryDetails from "./pages/countryDetails/countryDetails";
+import FaqPage from "./pages/faqPage/faqPage";
 
 function App() {
   return (
@@ -36,6 +43,7 @@ function App() {
         data2={Navbar_data[1]}
         data3={Navbar_data[2]}
       /> */}
+      <h2>This is Navbar</h2>
 
       <Routes>
         <Route
@@ -97,8 +105,27 @@ function App() {
           path="/contact-us"
           element={<ContactUs data={Contact_us[0]} />}
         />
-        <Route path="/not-found" element={<NotFound />} />
+        <Route
+          path="/country-details"
+          element={
+            <CountryDetails
+              data={Country_details[0]}
+              data2={Country_details[1]}
+              data3={Country_details[2]}
+            />
+          }
+        />
+        <Route path="/not-found" element={<NotFound data={Not_found[0]} />} />
+        <Route
+          path="/empty-cart"
+          element={<EmptyCart data={Cart_empty[0]} />}
+        />
+        <Route
+          path="/faq"
+          element={<FaqPage data={Faq_section[0]} data2={Faq_section[1]} />}
+        />
       </Routes>
+      <h2>This is Footer</h2>
     </>
   );
 }
