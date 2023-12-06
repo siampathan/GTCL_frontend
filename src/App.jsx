@@ -24,6 +24,8 @@ import {
   Country_details,
   Faq_section,
   Shopp_cart,
+  Apply_online,
+  About_instructor,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
 import OurServices from "./pages/ourServices/ourServices";
@@ -36,6 +38,8 @@ import EmptyCart from "./pages/emptyCart/emptyCart";
 import CountryDetails from "./pages/countryDetails/countryDetails";
 import FaqPage from "./pages/faqPage/faqPage";
 import ShopCart from "./pages/shopCart/shopCart";
+import ApplyOnline from "./pages/applyOnline/applyOnline";
+import AboutInstructor from "./pages/aboutInstructor/aboutInstructor";
 
 function App() {
   return (
@@ -104,6 +108,17 @@ function App() {
           element={<Instructors data={Instructors_data[0]} />}
         />
         <Route
+          path="/about-instructor"
+          element={
+            <AboutInstructor
+              data={About_instructor[0]}
+              data2={About_instructor[1]}
+              data3={About_instructor[2]}
+              data4={About_instructor[3]}
+            />
+          }
+        />
+        <Route
           path="/contact-us"
           element={<ContactUs data={Contact_us[0]} />}
         />
@@ -116,6 +131,10 @@ function App() {
               data3={Country_details[2]}
             />
           }
+        />
+        <Route
+          path="/apply-online"
+          element={<ApplyOnline data={Apply_online[0]} />}
         />
         <Route
           path="/shop-cart"

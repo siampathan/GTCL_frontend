@@ -69,6 +69,10 @@ import Faq_banner from "../assets/img/faq/ask-question/01.png";
 import Shopcart_icon from "../assets/img/related-course/01.jpg";
 import Shopcart_poster from "../assets/img/course/01.png";
 
+import Flag_image from "../assets/img/flag/02.png";
+
+import Instructor_avater from "../assets/img/team/single/01.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -770,6 +774,96 @@ export const Instructors_data = [
   },
 ];
 
+export const About_instructor = [
+  {
+    title: "About Instructor",
+    desc: `Having over 20 years of experience in the computer science and
+    information technology fields. Taught many courses at the University level to
+    thousands of students.`,
+    desc2: `Have been training students and employees on various programming languages like, C++ , VC++ , JAVA technologies and Web Development.
+    Running a Youtube Channel on “Algorithms” , which has help many university students in their academics.`,
+    title2: "Clients and publications include:",
+    content: [
+      `Media: GQ, Details, Esquire, High Snobiety &
+      Selectism, Complex Media, Hypebeast Magazine`,
+      `Fashion: Giorgio Armani, Public School NY, The
+      Arrivals, Raleigh, En Noir, Ovadia & Sons, Alternative Apparel`,
+      `Client: Saks Fifth Avenue, Bloomingdales, Barney's
+      NY, Carson Street Clothiers`,
+    ],
+  },
+  {
+    imageLink: `${Instructor_avater}`,
+    badge: "Top Instructor",
+    title: "Brooklyn Simmons",
+    position: "Head of Google Map Development at",
+    companyName: "Google",
+    studentNum: 25896,
+    text: "Total Students",
+    rating: 4.5,
+    ratingNum: 78542,
+  },
+  {
+    title: "Students feedback",
+    desc: `Let’s see what my students gave feedback about my courses
+    &amp; classes`,
+  },
+  {
+    title: "My all courses",
+    subtitle: "I have total 4 courses live on Eduplan courses platform",
+    content: [
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+      {
+        imageLink: `${Shopcart_poster}`,
+        tag: "Harverd University",
+        title: "Become Ethereum Blockchain Developer",
+        rating: 4.8,
+        ratingNum: 756,
+        price: 25.5,
+        desc: `We have professional alliance's with leading Universities Colleges
+        around the world.`,
+        studentsNum: 548796,
+        time: `23 hr 54 min`,
+      },
+    ],
+  },
+];
+
 export const Contact_us = [
   {
     title: "Contact us",
@@ -850,6 +944,47 @@ export const Cart_empty = [
     title: "Empty Cart",
     desc: `Your cart is empty. Keep shopping to find a course!`,
     buttonContent: "Back to homepage",
+  },
+];
+
+export const Apply_online = [
+  {
+    title: "Apply online",
+    subtitle: "Primary Information",
+    desc: `Select prefered study destination`,
+    subdesc: `(Select Multiple)`,
+    content: [
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+    ],
+    title2: "Admission preference",
+    buttonContent: "submit",
   },
 ];
 
