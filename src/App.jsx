@@ -8,11 +8,10 @@ import "./assets/css/style.css";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
-//import Navbar from "./components/navbar/navbar";
-// import { Navbar_data } from "./data/data";
+import Navbar from "./components/navbar/navbar";
 import {
-  Home_data,
   Navbar_data,
+  Home_data,
   About_us,
   Our_services,
   Services_details,
@@ -48,12 +47,7 @@ import AllCourses from "./pages/allCourses/allCourses";
 function App() {
   return (
     <>
-      {/* <Navbar
-        data={Navbar_data[0]}
-        data2={Navbar_data[1]}
-        data3={Navbar_data[2]}
-      /> */}
-      <h2>This is Navbar</h2>
+      <Navbar data={Navbar_data[0]} data2={Navbar_data[1]} />
 
       <Routes>
         <Route
@@ -123,10 +117,6 @@ function App() {
           }
         />
         <Route
-          path="/contact-us"
-          element={<ContactUs data={Contact_us[0]} />}
-        />
-        <Route
           path="/country-details"
           element={
             <CountryDetails
@@ -158,14 +148,18 @@ function App() {
             />
           }
         />
+        <Route
+          path="/faq"
+          element={<FaqPage data={Faq_section[0]} data2={Faq_section[1]} />}
+        />
         <Route path="/not-found" element={<NotFound data={Not_found[0]} />} />
         <Route
           path="/empty-cart"
           element={<EmptyCart data={Cart_empty[0]} />}
         />
         <Route
-          path="/faq"
-          element={<FaqPage data={Faq_section[0]} data2={Faq_section[1]} />}
+          path="/contact-us"
+          element={<ContactUs data={Contact_us[0]} />}
         />
       </Routes>
       <h2>This is Footer</h2>

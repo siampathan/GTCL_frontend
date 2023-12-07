@@ -80,93 +80,68 @@ export const Navbar_data = [
     content: [
       {
         title: "Home One",
-        link: "/",
+        link: "",
       },
       {
         title: "Home Two",
-        link: "/home-2",
+        link: "home-two",
       },
     ],
-    title2: "About Us",
-    link: "/about-us",
-    title3: "Contact Us",
-    link2: "/contact-us",
   },
   {
     title: "Pages",
     content: [
       {
         title: "Our Services",
-        link: "/our-services",
+        link: "our-services",
       },
       {
         title: "Services Details",
-        link: "/services-details",
+        link: "services-details",
       },
       {
         title: "Team",
-        link: "/team",
+        link: "team",
       },
       {
         title: "Instructors",
-        link: "/instructors",
+        link: "instructors",
       },
       {
         title: "About Instructor",
-        link: "/about-instructor",
+        link: "about-instructor",
       },
       {
         title: "Country Details",
-        link: "/country-details",
+        link: "country-details",
       },
       {
         title: "All Course",
-        link: "/all-course",
+        link: "all-course",
       },
       {
-        title: "All Course with widget",
-        link: "/coursewith-widget",
-      },
-      {
-        title: "Course Details",
-        link: "/course-details",
+        title: "All Course With Widget",
+        link: "all-course-widget",
       },
       {
         title: "Apply Online",
-        link: "/apply-online",
+        link: "apply-online",
       },
       {
         title: "Shop Cart",
-        link: "/shop-cart",
+        link: "shop-cart",
       },
       {
         title: "FAQ",
-        link: "/faq",
+        link: "faq",
       },
       {
         title: "404",
-        link: "/not-found",
+        link: "not-found",
       },
       {
         title: "Cart Empty",
-        link: "/cart-empty",
-      },
-    ],
-  },
-  {
-    title: "Blog",
-    content: [
-      {
-        title: "Blog",
-        link: "/blog",
-      },
-      {
-        title: "Blog Classic",
-        link: "/blog-classic",
-      },
-      {
-        title: "Blog Single",
-        link: "/blog-details",
+        link: "empty-cart",
       },
     ],
   },
