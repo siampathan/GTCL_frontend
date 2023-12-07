@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
-const Navbar = ({ data, data2 }) => {
+const Navbar = ({ data, data2, data3 }) => {
   let contents = data.content;
   let contents2 = data2.content;
+  let contents3 = data3.content;
   return (
     <>
       <div className="nav-area-wrapper-relative">
@@ -40,7 +41,7 @@ const Navbar = ({ data, data2 }) => {
                   </ul>
                 </li>
                 <li>
-                  <a href="about-us.html">About Us</a>
+                  <Link to={`/${data?.link}`}>{data?.title2}</Link>
                 </li>
                 <li className="menu-item-has-children">
                   <a href="#">{data2?.title}</a>
@@ -52,65 +53,22 @@ const Navbar = ({ data, data2 }) => {
                         </li>
                       );
                     })}
-                    {/* <li>
-                      <a href="services-details.html">Services Details</a>
-                    </li>
-                    <li>
-                      <a href="our-team.html">Team</a>
-                    </li>
-                    <li>
-                      <a href="instructors.html">Instructors</a>
-                    </li>
-                    <li>
-                      <a href="about-instructor.html">About Instructor</a>
-                    </li>
-                    <li>
-                      <a href="country-details.html">Country Details</a>
-                    </li>
-                    <li>
-                      <a href="all-course.html">All Course</a>
-                    </li>
-                    <li>
-                      <a href="all-course-widget.html">
-                        All Course with widget
-                      </a>
-                    </li>
-                    <li>
-                      <a href="course-details.html">Course Details</a>
-                    </li>
-                    <li>
-                      <a href="apply-online.html">Apply Online</a>
-                    </li>
-                    <li>
-                      <a href="shop-cart.html">Shop Cart</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="404.html">404</a>
-                    </li>
-                    <li>
-                      <a href="cart-empty.html">Cart Empty</a>
-                    </li> */}
                   </ul>
                 </li>
                 <li className="menu-item-has-children">
-                  <a href="#">Blog</a>
+                  <a href="#">{data3?.title}</a>
                   <ul className="sub-menu">
-                    <li>
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a href="blog-classic.html">Blog Classic</a>
-                    </li>
-                    <li>
-                      <a href="blog-details.html">Blog Single</a>
-                    </li>
+                    {contents3.map((item, indx) => {
+                      return (
+                        <li key={indx}>
+                          <Link to={`/${item.link}`}>{item.title}</Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </li>
                 <li>
-                  <a href="contact-us.html">Contact Us</a>
+                  <Link to={`/${data?.link2}`}>{data?.title3}</Link>
                 </li>
               </ul>
             </div>

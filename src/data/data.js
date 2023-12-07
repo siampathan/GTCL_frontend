@@ -73,6 +73,12 @@ import Flag_image from "../assets/img/flag/02.png";
 
 import Instructor_avater from "../assets/img/team/single/01.png";
 
+import Company_icon from "../assets/img/icon/themeim.png";
+import Tag_icon from "../assets/img/icon/tag.png";
+import Calander_icon from "../assets/img/icon/calander-book.png";
+import Blogposter_image from "../assets/img/sections/blog/blog-04.png";
+import BlogSide_image from "../assets/img/sections/blog/blog-side-02.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -87,6 +93,10 @@ export const Navbar_data = [
         link: "home-two",
       },
     ],
+    title2: "About Us",
+    link: "about-us",
+    title3: "Contact Us",
+    link2: "contact-us",
   },
   {
     title: "Pages",
@@ -142,6 +152,23 @@ export const Navbar_data = [
       {
         title: "Cart Empty",
         link: "empty-cart",
+      },
+    ],
+  },
+  {
+    title: "Blog",
+    content: [
+      {
+        title: "Blog",
+        link: "blog",
+      },
+      {
+        title: "Blog Classic",
+        link: "blog-classic",
+      },
+      {
+        title: "Blog Single",
+        link: "blog-details",
       },
     ],
   },
@@ -1415,47 +1442,6 @@ export const Cart_empty = [
   },
 ];
 
-export const Apply_online = [
-  {
-    title: "Apply online",
-    subtitle: "Primary Information",
-    desc: `Select prefered study destination`,
-    subdesc: `(Select Multiple)`,
-    content: [
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-      {
-        title: "Canada",
-        imageLink: `${Flag_image}`,
-      },
-    ],
-    title2: "Admission preference",
-    buttonContent: "submit",
-  },
-];
-
 export const Shopp_cart = [
   {
     title: "Shopping Cart",
@@ -1556,6 +1542,197 @@ export const Shopp_cart = [
         around the world.`,
         studentsNum: 548796,
         time: `23 hr 54 min`,
+      },
+    ],
+  },
+];
+
+export const Apply_online = [
+  {
+    title: "Apply online",
+    subtitle: "Primary Information",
+    desc: `Select prefered study destination`,
+    subdesc: `(Select Multiple)`,
+    content: [
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+      {
+        title: "Canada",
+        imageLink: `${Flag_image}`,
+      },
+    ],
+    title2: "Admission preference",
+    buttonContent: "submit",
+  },
+];
+
+export const Blog_section = [
+  {
+    title: "Eduplan Blog",
+    desc: `A little step maybe the beginning of your great journey.`,
+    content: [
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+    ],
+  },
+];
+
+export const Blog_classic = [
+  {
+    title: "Blog classic",
+    desc: `A little step maybe the beginning of your great journey.`,
+  },
+];
+
+export const Blogright_section = [
+  {
+    title: "Search",
+    heading: "Recent Post",
+    content: [
+      {
+        imageLink: `${BlogSide_image}`,
+        date: `May 23,2022`,
+        title: `All You Need to Know About TSS 482 Visa`,
+      },
+      {
+        imageLink: `${BlogSide_image}`,
+        date: `May 23,2022`,
+        title: `All You Need to Know About TSS 482 Visa`,
+      },
+      {
+        imageLink: `${BlogSide_image}`,
+        date: `May 23,2022`,
+        title: `All You Need to Know About TSS 482 Visa`,
+      },
+      {
+        imageLink: `${BlogSide_image}`,
+        date: `May 23,2022`,
+        title: `All You Need to Know About TSS 482 Visa`,
+      },
+    ],
+  },
+  {
+    title: "category",
+    content: [
+      {
+        title: "Online Course",
+        totalNum: 23,
+      },
+      {
+        title: "Online Course",
+        totalNum: 23,
+      },
+      {
+        title: "Online Course",
+        totalNum: 23,
+      },
+      {
+        title: "Online Course",
+        totalNum: 23,
+      },
+      {
+        title: "Online Course",
+        totalNum: 23,
       },
     ],
   },

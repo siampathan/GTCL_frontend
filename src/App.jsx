@@ -27,6 +27,9 @@ import {
   About_instructor,
   Course_widget,
   All_courses,
+  Blog_section,
+  Blogright_section,
+  Blog_classic,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
 import OurServices from "./pages/ourServices/ourServices";
@@ -43,11 +46,17 @@ import ApplyOnline from "./pages/applyOnline/applyOnline";
 import AboutInstructor from "./pages/aboutInstructor/aboutInstructor";
 import CourseWidget from "./pages/courseWidget/courseWidget";
 import AllCourses from "./pages/allCourses/allCourses";
+import BlogSection from "./components/blogSection/blogSection";
+import BlogClassic from "./components/blogClassic/blogClassic";
 
 function App() {
   return (
     <>
-      <Navbar data={Navbar_data[0]} data2={Navbar_data[1]} />
+      <Navbar
+        data={Navbar_data[0]}
+        data2={Navbar_data[1]}
+        data3={Navbar_data[2]}
+      />
 
       <Routes>
         <Route
@@ -156,6 +165,20 @@ function App() {
         <Route
           path="/empty-cart"
           element={<EmptyCart data={Cart_empty[0]} />}
+        />
+        <Route
+          path="/blog"
+          element={
+            <BlogSection
+              data={Blog_section[0]}
+              data2={Blogright_section[0]}
+              data3={Blogright_section[1]}
+            />
+          }
+        />
+        <Route
+          path="blog-classic"
+          element={<BlogClassic data={Blog_classic[0]} />}
         />
         <Route
           path="/contact-us"
