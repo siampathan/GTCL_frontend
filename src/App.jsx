@@ -30,6 +30,7 @@ import {
   Blog_section,
   Blogright_section,
   Blog_classic,
+  Footer_section,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
 import OurServices from "./pages/ourServices/ourServices";
@@ -48,6 +49,7 @@ import CourseWidget from "./pages/courseWidget/courseWidget";
 import AllCourses from "./pages/allCourses/allCourses";
 import BlogSection from "./components/blogSection/blogSection";
 import BlogClassic from "./components/blogClassic/blogClassic";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -185,7 +187,7 @@ function App() {
           element={<ContactUs data={Contact_us[0]} />}
         />
       </Routes>
-      <h2>This is Footer</h2>
+      <Footer data={Footer_section[0]} data2={Footer_section[1]} />
     </>
   );
 }

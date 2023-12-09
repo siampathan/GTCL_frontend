@@ -79,6 +79,12 @@ import Calander_icon from "../assets/img/icon/calander-book.png";
 import Blogposter_image from "../assets/img/sections/blog/blog-04.png";
 import BlogSide_image from "../assets/img/sections/blog/blog-side-02.png";
 
+import Footer_image from "../assets/img/icon/newslater.png";
+import Footer_bell from "../assets/img/icon/bell.png";
+import Footerlocation_image from "../assets/img/icon/location-02.png";
+import Footer_icon from "../assets/img/icon/edu-award.png";
+import Footer_icon2 from "../assets/img/icon/iso.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -1775,5 +1781,59 @@ export const Faq_section = [
     desc: `Can’t find answers you are looking for? No worries. We have
     expert team to help you with`,
     buttonContent: "Ask Your question",
+  },
+];
+
+export const Footer_section = [
+  {
+    title: "Subscribe our newsletter",
+    desc: `Enter your mail address to get our updates, offer and study abroad
+    related all updates`,
+    buttonContent: "subscribe",
+    imageLink: `${Footer_image}`,
+    imageLink2: `${Footer_bell}`,
+    location_image: `${Footerlocation_image}`,
+    icon_image: `${Footer_icon}`,
+    icon_image2: `${Footer_icon2}`,
+    location_heading: "Location",
+    address: `8502 Preston Rd. Inglewood, Maine Bangladesh`,
+    copyright_desc: `© 2022 Eduplan. All rights reserved | Developed By`,
+    sub_copyright: "Themeim",
+  },
+  {
+    title: "Important Links",
+    content: [
+      `Terms and conditions`,
+      `Terms and conditions`,
+      `Terms and conditions`,
+      `Terms and conditions`,
+      `Terms and conditions`,
+      `Terms and conditions`,
+    ],
+    title2: "Site Highlight",
+    content2: [
+      `Student videos`,
+      `Photo gallery`,
+      `TSC prospectus`,
+      `Student newsletter`,
+      `Student portal`,
+    ],
+    title3: "Help Center",
+    content3: [
+      `Courses`,
+      `How to apply for admission`,
+      `Admission Documents`,
+      `Frequently asked questions`,
+      `Student accommodation`,
+      `Student Jobs`,
+    ],
+    title4: "Services",
+    content: [
+      `Counselling`,
+      `Test Preparation`,
+      `Admission`,
+      `Education Loan`,
+      `Visa Processing`,
+    ],
   },
 ];
