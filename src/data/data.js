@@ -46,6 +46,10 @@ import NewsSectionimage2 from "../assets/img/icon/calander.png";
 
 import Aboutimage from "../assets/img/about/01.jpg";
 import AboutIconimage from "../assets/img/icon/icon-and-text/key.svg";
+import Aboutstudent_image from "../assets/img/sections/client/people-group.png";
+import Aboutclient_image from "../assets/img/sections/client/customer-care.png";
+import Aboutgraduation_image from "../assets/img/sections/client/graduation.png";
+import Aboutworld_image from "../assets/img/sections/client/world.png";
 
 import Chooseimage from "../assets/img/chose-us/01.jpg";
 import ChooseIcon from "../assets/img/icon/icon-and-text/02/01.png";
@@ -498,6 +502,28 @@ export const About_us = [
     subtitle: "Meet Experts",
     desc: `87% of people learning for professional development report
     career benefits`,
+    content: [
+      {
+        imageLink: `${Aboutstudent_image}`,
+        endNum: 458712,
+        title: "More then students",
+      },
+      {
+        imageLink: `${Aboutclient_image}`,
+        endNum: 211,
+        title: "Total consultants",
+      },
+      {
+        imageLink: `${Aboutgraduation_image}`,
+        endNum: 425,
+        title: "Total courses",
+      },
+      {
+        imageLink: `${Aboutworld_image}`,
+        endNum: 32,
+        title: "Countries",
+      },
+    ],
   },
   {
     title: "Why chose us",
