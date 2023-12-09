@@ -85,6 +85,12 @@ import Footerlocation_image from "../assets/img/icon/location-02.png";
 import Footer_icon from "../assets/img/icon/edu-award.png";
 import Footer_icon2 from "../assets/img/icon/iso.png";
 
+import Blogclassic_poster from "../assets/img/sections/blog/blog-classic-01.png";
+import Blogdetails_poster from "../assets/img/sections/blog/blog-single.png";
+import Blogdetails_poster2 from "../assets/img/sections/blog/blog-single-02.png";
+import Blogdetails_poster3 from "../assets/img/sections/blog/blog-single-03.png";
+import Blogdetails_gridicon from "../assets/img/icon/grid-02.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -1687,6 +1693,199 @@ export const Blog_classic = [
   {
     title: "Blog classic",
     desc: `A little step maybe the beginning of your great journey.`,
+  },
+  {
+    overContent: [
+      {
+        imageLink: `${Blogclassic_poster}`,
+        title: `10 best courses to study in the UK
+        for Bangladeshi Students`,
+        desc: `I am glad that you have made it here to send a distress signal, and inform
+        the Senate that all on board were killed. Dantooine. I’m not going to
+        Alderaan. I really got to go.`,
+        content: [
+          {
+            imageLink: `${Company_icon}`,
+            title: `Themeim`,
+          },
+          {
+            imageLink: `${Tag_icon}`,
+            title: `Higher education`,
+          },
+          {
+            imageLink: `${Calander_icon}`,
+            title: `19th Jan 2022`,
+          },
+        ],
+      },
+      {
+        imageLink: `${Blogclassic_poster}`,
+        title: `10 best courses to study in the UK
+        for Bangladeshi Students`,
+        desc: `I am glad that you have made it here to send a distress signal, and inform
+        the Senate that all on board were killed. Dantooine. I’m not going to
+        Alderaan. I really got to go.`,
+        content: [
+          {
+            imageLink: `${Company_icon}`,
+            title: `Themeim`,
+          },
+          {
+            imageLink: `${Tag_icon}`,
+            title: `Higher education`,
+          },
+          {
+            imageLink: `${Calander_icon}`,
+            title: `19th Jan 2022`,
+          },
+        ],
+      },
+      {
+        imageLink: `${Blogclassic_poster}`,
+        title: `10 best courses to study in the UK
+        for Bangladeshi Students`,
+        desc: `I am glad that you have made it here to send a distress signal, and inform
+        the Senate that all on board were killed. Dantooine. I’m not going to
+        Alderaan. I really got to go.`,
+        content: [
+          {
+            imageLink: `${Company_icon}`,
+            title: `Themeim`,
+          },
+          {
+            imageLink: `${Tag_icon}`,
+            title: `Higher education`,
+          },
+          {
+            imageLink: `${Calander_icon}`,
+            title: `19th Jan 2022`,
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const Blog_details = [
+  {
+    imageLink: `${Blogdetails_poster}`,
+    title: "Canada Scholarship Opportunities for Indian Students in 2022",
+    content: [
+      {
+        imageLink: `${Company_icon}`,
+        title: "Themeim",
+      },
+      {
+        imageLink: `${Tag_icon}`,
+        title: "Higher education",
+      },
+      {
+        imageLink: `${Calander_icon}`,
+        title: `19th Jan 2022`,
+      },
+    ],
+    desc: `To assist excellent Indian students in funding their education, Canadian universities  and
+    colleges provide a variety of scholarships. Aside from that, the Canadian government, as
+    well as public and private institutions, offer several scholarships, grants, and bursaries. Check the
+    eligibility and criteria, as well as the deadline, before applying
+    for any of these scholarships.`,
+    desc2: `Most scholarships to study in Canada for Indian students require a decent academic score,
+    but it also depends on aspects such as your preferred destination, subject, and level.
+    Extracurricular hobbies and volunteer work might be used to your advantage in some
+    scholarships. So, here in this blog there are multiple international scholarships for
+    Indian students in Canada available that a student can check and ease the process of
+    studying in Canada.`,
+    content2: [
+      `Canadian government funded scholarships: These are the
+      scholarships that grant awards that encourage students to study in Canada.`,
+      `Non-government scholarships: There are various trusts, charities,
+      and associations offering scholarships to students following a specific course.`,
+      `Institutional scholarships: Universities and colleges providing
+      scholarships for studying in Canada for Indian students.`,
+    ],
+  },
+  {
+    imageLink: `${Blogdetails_poster2}`,
+    imageLink2: `${Blogdetails_poster3}`,
+    content: [
+      {
+        title: ` Government Funded Scholarship for Indian Student in Canada`,
+        desc: `There are different scholarships to study in Canada for Indian
+        students that are government funded and help Indian students
+        to manage their cost of studying in Canada efficiently. The
+        following scholarships are:`,
+      },
+      {
+        title: ` Banting Postdoctoral Fellowship`,
+        desc: `It is a merit-based scholarship for postdoctoral students.
+        This fellowship is granted for a tenure of 2 years and to be a
+        fellow under the program, Indian students need to get admitted
+        to their desired university or college in Canada. The awardees
+        will hold their fellowship and get their application permitted
+        by the concern authority of the particular university.`,
+      },
+      {
+        title: ` IDRC Research Awards`,
+        desc: ` It is one of the scholarships for masters in Canada for Indian students who are interested to pursue master’s
+        degree or post-doctoral degree and are admitted to a
+        recognized university in Canada. This scholarship is supported
+        for one year by the university or institute in which the
+        student is acknowledged.`,
+      },
+      {
+        title: ` Government Funded Scholarship for Indian Student in Canada`,
+        desc: `There are different scholarships to study in Canada for Indian
+        students that are government funded and help Indian students
+        to manage their cost of studying in Canada efficiently. The
+        following scholarships are:`,
+      },
+      {
+        title: ` Wrap Up`,
+        desc: `Getting a scholarship for Indian students in Canada is
+        highlight competitive, so be aware of the timeline to apply
+        for the same. There are other ways to finance your education
+        in Canada as well apart from scholarships. It is always
+        suitable to have backup options rather than relying on one as
+        studying in Canada is a dream for thousands of student.`,
+      },
+    ],
+    quote: `The amount available and the kind of award varies between
+    different universities in Canada. Getting a scholarship is
+    viable and so a student must apply before time.`,
+    author: "JHON SMITH",
+  },
+  {
+    tag_heading: "Tags: ",
+    title: "Education",
+    title2: "Coaching",
+    imageLink: `${Blogdetails_gridicon}`,
+    content: [
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+      {
+        imageLink: `${Blogposter_image}`,
+        tag_icon: `${Tag_icon}`,
+        tag: "Education",
+        companyIcon: `${Company_icon}`,
+        companyName: "Themeim",
+        calanderIcon: `${Calander_icon}`,
+        date: `19th Jan 2022`,
+        title: ` Study Bachelor's or Master's in the Netherlands`,
+      },
+    ],
+  },
+  {
+    title: "Leave A Comments",
+    desc: `Your email address will not be published. Required fields are marked *`,
+    buttonContent: "post Comment",
   },
 ];
 

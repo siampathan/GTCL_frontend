@@ -30,6 +30,7 @@ import {
   Blog_section,
   Blogright_section,
   Blog_classic,
+  Blog_details,
   Footer_section,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
@@ -50,6 +51,7 @@ import AllCourses from "./pages/allCourses/allCourses";
 import BlogSection from "./components/blogSection/blogSection";
 import BlogClassic from "./components/blogClassic/blogClassic";
 import Footer from "./components/footer/footer";
+import BlogDetails from "./components/blogDetails/blogDetails";
 
 function App() {
   return (
@@ -180,11 +182,31 @@ function App() {
         />
         <Route
           path="blog-classic"
-          element={<BlogClassic data={Blog_classic[0]} />}
+          element={
+            <BlogClassic
+              data={Blog_classic[0]}
+              data2={Blog_classic[1]}
+              data3={Blogright_section[0]}
+              data4={Blogright_section[1]}
+            />
+          }
         />
         <Route
           path="/contact-us"
           element={<ContactUs data={Contact_us[0]} />}
+        />
+        <Route
+          path="blog-details"
+          element={
+            <BlogDetails
+              data={Blog_details[0]}
+              data2={Blog_details[1]}
+              data3={Blog_details[2]}
+              data4={Blogright_section[0]}
+              data5={Blogright_section[1]}
+              data6={Blog_details[3]}
+            />
+          }
         />
       </Routes>
       <Footer data={Footer_section[0]} data2={Footer_section[1]} />
