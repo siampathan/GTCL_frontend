@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NotFound = ({ data }) => {
   return (
-    <div className="error-wrapper">
+    <div className="error-wrapper nav_bg">
       <div className="container custom-container-01">
         <div className="row">
           <div className="col-lg-12">

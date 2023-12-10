@@ -5,7 +5,7 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
   let contents2 = data3.content;
   let contents3 = data2.content;
   return (
-    <div class="about-page-area-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div class="about-page-area-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <section className="about-section-area section-bottom-space">
         <div className="container custom-container-01">
           <div className="row align-items-center">

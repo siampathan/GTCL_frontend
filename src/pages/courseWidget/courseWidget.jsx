@@ -1,7 +1,7 @@
 const CourseWidget = ({ data }) => {
   let contents = data.content;
   return (
-    <div className="all-course-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div className="all-course-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <div className="breadcrumb-wrap style-01">
         <div className="container custom-container-01">
           <div className="row">

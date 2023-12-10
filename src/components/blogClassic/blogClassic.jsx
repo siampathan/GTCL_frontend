@@ -3,7 +3,7 @@ import BlogrightSection from "../blogrightSection/blogrightSection";
 const BlogClassic = ({ data, data2, data3, data4 }) => {
   let wrapContent = data2.overContent;
   return (
-    <div className="blog-classic single-page-section-top-space single-page-section-bottom-space">
+    <div className="blog-classic single-page-section-top-space single-page-section-bottom-space nav_bg">
       <div className="breadcrumb-wrap style-01">
         <div className="container custom-container-01">
           <div className="row">

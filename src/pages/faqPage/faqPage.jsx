@@ -1,7 +1,7 @@
 const FaqPage = ({ data, data2 }) => {
   let contents = data.content;
   return (
-    <div className="faq-wrapper single-page-section-top-space">
+    <div className="faq-wrapper single-page-section-top-space nav_bg">
       <div className="faq-inner">
         <div className="container custom-container-01">
           <div className="row justify-content-center">

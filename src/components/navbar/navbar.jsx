@@ -6,7 +6,7 @@ const Navbar = ({ data, data2, data3 }) => {
   let contents3 = data3.content;
   return (
     <>
-      <div className="nav-area-wrapper-relative">
+      <div className="nav-area-wrapper-relative nav_bg">
         <nav className="navbar navbar-area navbar-expand-lg navigation-style-02">
           <div className="container custom-container custom-container-01">
             <div className="responsive-menu">

@@ -2,7 +2,7 @@ const CountryDetails = ({ data, data2, data3 }) => {
   let contents = data.content;
   let contents2 = data2.content;
   return (
-    <div className="country-details-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div className="country-details-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <section className="about-section-area-wrapper section-bottom-space">
         <div className="container custom-container-01">
           <div className="row align-items-center">

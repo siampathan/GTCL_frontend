@@ -4,7 +4,7 @@ const ShopCart = ({ data, data2, data3 }) => {
   let contents = data.content;
   let contents2 = data3.content;
   return (
-    <div className="course-details-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div className="course-details-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <div className="breadcrumb-wrap style-01">
         <div className="container custom-container-01">
           <div className="row">

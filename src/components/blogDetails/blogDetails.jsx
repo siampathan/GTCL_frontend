@@ -8,7 +8,7 @@ const BlogDetails = ({ data, data2, data3, data4, data5, data6 }) => {
   let blog_content = data2.content;
   let blog_card = data3.content;
   return (
-    <div className="blog-details-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div className="blog-details-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <section className="blog-details-section">
         <div className="container custom-container-01">
           <div className="row">

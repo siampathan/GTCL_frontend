@@ -3,7 +3,7 @@ import DetailsSection from "../../components/detailsSection/detailsSection";
 const ServicesDetails = ({ data, data2, data3 }) => {
   let contents = data2.content;
   return (
-    <div className="services-details-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div className="services-details-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <DetailsSection data={data} />
 
       <section className="about-section-area-wrapper section-top-space section-bottom-space">

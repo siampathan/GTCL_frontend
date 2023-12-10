@@ -6,6 +6,23 @@ import Homebanner_4 from "../assets/img/header/plane.png";
 import Homebanner_5 from "../assets/img/icon/location.png";
 import Homebanner_6 from "../assets/img/header/header-img.png";
 
+import Home2_peopleicon from "../assets/img/icon/people-icon.png";
+import Home2_clelebrateicon from "../assets/img/icon/celebrate-icon.png";
+import Home2_person from "../assets/img/header/two-person.png";
+import Home2_shapes from "../assets/img/shapes/Ellipse-03.png";
+import Home2_shapes2 from "../assets/img/shapes/Ellipse-04.png";
+import Home2_shapes3 from "../assets/img/shapes/Star-02.png";
+import Home2_shapes4 from "../assets/img/shapes/Star-01.png";
+
+import Marquee_image from "../assets/img/sections/client/koc.png";
+import Marquee_image2 from "../assets/img/sections/client/amity.png";
+import Marquee_image3 from "../assets/img/sections/client/kennesaw.png";
+import Marquee_image4 from "../assets/img/sections/client/duke.png";
+import Marquee_image5 from "../assets/img/sections/client/twiter.png";
+import Marquee_image6 from "../assets/img/sections/client/ibm.png";
+import Marquee_image7 from "../assets/img/sections/client/google.png";
+import Marquee_image8 from "../assets/img/sections/client/koc.png";
+
 import Featureimage from "../assets/img/shapes/graduation.png";
 import Featureimage2 from "../assets/img/icon/idea.png";
 import Featureimage3 from "../assets/img/icon/coversation.png";
@@ -468,6 +485,58 @@ export const Home_data = [
     desc: `Still do you have any questions to know? `,
     desc2: `Feel free to ask our experts here.`,
     buttonContent: "ASK YOUR QUESTIONS",
+  },
+];
+
+export const Hometwo_data = [
+  {
+    imageLink: `${Home2_clelebrateicon}`,
+    title: "you want",
+    highlights: "anything",
+    subtitle: "SPECIAL OFFER FIRST CUSTOMER",
+    desc: `We’re a nonprofit with the mission to provide a free, world-classes education for anyone,
+    anywhere.`,
+    buttonContent: "Join for free",
+    buttonContent2: "EXPLORE ALL COURSES",
+    heading: `145k+ Enrolled`,
+    sub_heading: "Provide world class certificate",
+    imageLink2: `${Home2_peopleicon}`,
+    content: [
+      {
+        imageLink: `${Home2_shapes}`,
+        className: "element-06",
+      },
+      {
+        imageLink: `${Home2_shapes2}`,
+        className: "element-07",
+      },
+      {
+        imageLink: `${Home2_shapes3}`,
+        className: "element-08",
+      },
+      {
+        imageLink: `${Home2_shapes4}`,
+        className: "element-09",
+      },
+      {
+        imageLink: `${Home2_person}`,
+        className: "banner-img",
+      },
+    ],
+  },
+  {
+    title: " We collaborate with",
+    subtitle: " 200+ leading universities and companies",
+    content: [
+      `${Marquee_image}`,
+      `${Marquee_image2}`,
+      `${Marquee_image3}`,
+      `${Marquee_image4}`,
+      `${Marquee_image5}`,
+      `${Marquee_image6}`,
+      `${Marquee_image7}`,
+      `${Marquee_image8}`,
+    ],
   },
 ];
 

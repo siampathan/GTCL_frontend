@@ -12,6 +12,7 @@ import Navbar from "./components/navbar/navbar";
 import {
   Navbar_data,
   Home_data,
+  Hometwo_data,
   About_us,
   Our_services,
   Services_details,
@@ -52,6 +53,7 @@ import BlogSection from "./components/blogSection/blogSection";
 import BlogClassic from "./components/blogClassic/blogClassic";
 import Footer from "./components/footer/footer";
 import BlogDetails from "./components/blogDetails/blogDetails";
+import Home2 from "./components/home2/home2";
 
 function App() {
   return (
@@ -78,6 +80,10 @@ function App() {
               data9={Home_data[8]}
             />
           }
+        />
+        <Route
+          path="/home-two"
+          element={<Home2 data={Hometwo_data[0]} data2={Hometwo_data[1]} />}
         />
         <Route
           path="/about-us"
