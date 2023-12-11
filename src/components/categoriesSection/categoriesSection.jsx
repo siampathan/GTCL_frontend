@@ -1,5 +1,6 @@
 const CategoriesSection = ({ data }) => {
   let contents = data.content;
+  let contents2 = data.content2;
   return (
     <section className="category-section-area">
       <div className="container custom-container-01">
@@ -57,7 +58,7 @@ const CategoriesSection = ({ data }) => {
           </div>
           <div className="tab-pane fade" id="collage">
             <div className="destination-items-wrap">
-              {contents?.map((item, indx) => {
+              {contents2?.map((item, indx) => {
                 return (
                   <div className="destination-single-item style-01" key={indx}>
                     <div className="thumbnail">

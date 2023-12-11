@@ -56,6 +56,21 @@ import Categoryimage12 from "../assets/img/sections/desipline/enverment.png";
 import Categoryimage13 from "../assets/img/sections/desipline/humanity.png";
 import Categoryimage14 from "../assets/img/sections/desipline/recicle.png";
 
+import Collage_image from "../assets/img/sections/desipline/french-fry.png";
+import Collage_image2 from "../assets/img/sections/desipline/news-paper.png";
+import Collage_image3 from "../assets/img/sections/desipline/first-aid-kit.png";
+import Collage_image4 from "../assets/img/sections/desipline/law.png";
+import Collage_image5 from "../assets/img/sections/desipline/enverment.png";
+import Collage_image6 from "../assets/img/sections/desipline/humanity.png";
+import Collage_image7 from "../assets/img/sections/desipline/recicle.png";
+import Collage_image8 from "../assets/img/sections/desipline/foresty.png";
+import Collage_image9 from "../assets/img/sections/desipline/science.png";
+import Collage_image10 from "../assets/img/sections/desipline/art.png";
+import Collage_image11 from "../assets/img/sections/desipline/business.png";
+import Collage_image12 from "../assets/img/sections/desipline/pc.png";
+import Collage_image13 from "../assets/img/sections/desipline/book.png";
+import Collage_image14 from "../assets/img/sections/desipline/click.png";
+
 import Stepimage from "../assets/img/icon/step-01.png";
 
 import NewsSectionimage from "../assets/img/h-blog/01.png";
@@ -433,6 +448,78 @@ export const Home_data = [
         title: "Enviromental",
         subtitle: "Studies",
         imageLink: `${Categoryimage14}`,
+      },
+    ],
+    content2: [
+      {
+        title: "Agriculture &",
+        subtitle: "Foresty",
+        imageLink: `${Collage_image}`,
+      },
+      {
+        title: "science",
+        subtitle: "& professional",
+        imageLink: `${Collage_image2}`,
+      },
+      {
+        title: "Art, Design &",
+        subtitle: "Culture",
+        imageLink: `${Collage_image3}`,
+      },
+      {
+        title: "Business &",
+        subtitle: " Management",
+        imageLink: `${Collage_image4}`,
+      },
+      {
+        title: "Computer",
+        subtitle: "Science & IT",
+        imageLink: `${Collage_image5}`,
+      },
+      {
+        title: "Education &",
+        subtitle: "Training",
+        imageLink: `${Collage_image6}`,
+      },
+      {
+        title: "Engeneering &",
+        subtitle: "Technology",
+        imageLink: `${Collage_image7}`,
+      },
+      {
+        title: "Hopitality &",
+        subtitle: "Sports",
+        imageLink: `${Collage_image8}`,
+      },
+      {
+        title: "Journalism &",
+        subtitle: "Media",
+        imageLink: `${Collage_image9}`,
+      },
+      {
+        title: "Medicine &",
+        subtitle: "Health",
+        imageLink: `${Collage_image10}`,
+      },
+      {
+        title: "Law",
+        subtitle: "",
+        imageLink: `${Collage_image11}`,
+      },
+      {
+        title: "Social Science",
+        subtitle: "",
+        imageLink: `${Collage_image12}`,
+      },
+      {
+        title: "Humanities",
+        subtitle: "",
+        imageLink: `${Collage_image13}`,
+      },
+      {
+        title: "Enviromental",
+        subtitle: "Studies",
+        imageLink: `${Collage_image14}`,
       },
     ],
   },

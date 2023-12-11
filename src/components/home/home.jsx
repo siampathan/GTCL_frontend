@@ -18,6 +18,7 @@ const Home = ({
   data7,
   data8,
   data9,
+  data10,
 }) => {
   return (
     <>
@@ -30,7 +31,7 @@ const Home = ({
         <CategoriesSection data={data6} />
         <StepSection data={data7} />
         <NewsSection data={data8} />
-        <FaqSection data={data9} />
+        <FaqSection data={data9} data2={data10} />
       </div>
     </>
   );
