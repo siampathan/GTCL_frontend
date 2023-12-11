@@ -89,6 +89,11 @@ function App() {
               data2={Hometwo_data[1]}
               data3={Hometwo_data[2]}
               data4={Hometwo_data[3]}
+              data5={About_us[1]}
+              data6={Hometwo_data[4]}
+              data7={Hometwo_data[5]}
+              data8={Hometwo_data[6]}
+              data9={Home_data[7]}
             />
           }
         />

@@ -1,5 +1,5 @@
 import AboutPosterSection from "../aboutPosterSection/aboutPosterSection";
-import CounterUp from "../counterUp/counterUp";
+import CounterWrap from "../counterWrap/counterWrap";
 
 const AboutUs = ({ data, data2, data3, data4 }) => {
   let contents = data.content;
@@ -196,23 +196,7 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
               <div className="col-lg-12">
                 <div className="counter-section-inner style-01">
                   {contents3?.map((item, indx) => {
-                    return (
-                      <div className="single-counterup" key={indx}>
-                        <div className="image-wrap">
-                          <img src={item.imageLink} alt="" />
-                        </div>
-                        <div className="content-wrap">
-                          <div className="odo-area">
-                            <h3 className="odometer odo-title">
-                              <CounterUp data={item.endNum} />
-                            </h3>
-                          </div>
-                          <div className="content">
-                            <h6 className="subtitle">{item.title}</h6>
-                          </div>
-                        </div>
-                      </div>
-                    );
+                    return <CounterWrap data={item} key={indx} />;
                   })}
                 </div>
               </div>

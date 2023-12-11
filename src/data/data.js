@@ -112,6 +112,21 @@ import Blogdetails_poster2 from "../assets/img/sections/blog/blog-single-02.png"
 import Blogdetails_poster3 from "../assets/img/sections/blog/blog-single-03.png";
 import Blogdetails_gridicon from "../assets/img/icon/grid-02.png";
 
+import Category_image from "../assets/img/sections/categories/python.png";
+import Category_image2 from "../assets/img/sections/categories/cyber-cell.png";
+import Category_image3 from "../assets/img/sections/categories/python.png";
+import Category_image4 from "../assets/img/sections/categories/heacker.png";
+import Category_image5 from "../assets/img/sections/categories/monitor.png";
+import Category_image6 from "../assets/img/sections/categories/graphic.png";
+import Category_image7 from "../assets/img/sections/categories/camera.png";
+import Category_image8 from "../assets/img/sections/categories/drawing-pen.png";
+import Category_image9 from "../assets/img/sections/categories/managenent.png";
+import Category_image10 from "../assets/img/sections/categories/coding.png";
+import Category_image11 from "../assets/img/sections/categories/machine-learning.png";
+import Category_image12 from "../assets/img/sections/categories/heacker.png";
+import Conference_image from "../assets/img/sections/about/conference.png";
+import Paperroll_image from "../assets/img/shapes/paper-roll.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -564,6 +579,91 @@ export const Hometwo_data = [
         desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
       },
     ],
+  },
+  {
+    title: "Featured Topic by Category",
+    subtitle: `CATEGORY`,
+    content: [
+      {
+        imageLink: `${Category_image}`,
+        title: "Python",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image2}`,
+        title: "Cyber Security",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image3}`,
+        title: "Ethical Hacking",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image4}`,
+        title: "UI UX Design",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image5}`,
+        title: "Graphic Design",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image6}`,
+        title: "Photography",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image7}`,
+        title: "Drawing",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image8}`,
+        title: "Business management",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image9}`,
+        title: "Web Development",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image10}`,
+        title: "Machine Learning",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image11}`,
+        title: "Ethical Hacking",
+        courseNumber: `458 Courses`,
+      },
+      {
+        imageLink: `${Category_image12}`,
+        title: "Financial Analysis",
+        courseNumber: `458 Courses`,
+      },
+    ],
+  },
+  {
+    imageLink: `${Conference_image}`,
+    title: `A faster way for your employees to grow `,
+    title2: `and upskill`,
+    subtitle: "ADVANTAGE FEATURES",
+    desc: ` Our range of solutions has something to offer all businesses and
+    organizations. Whether you’re a non-profit or a commercial
+    entity, we can tailor a plan for your needs.`,
+    desc2: `Our range of solutions has something to offer all businesses and
+    organizations. Whether you’re a non-profit or a commercial
+    entity, we can tailor a plan for your needs.`,
+    buttonContent: "Eduplan for business",
+  },
+  {
+    imageLink: `${Paperroll_image}`,
+    title: "Students feedback",
+    desc: `We have quality partners in variety of destinations around the
+    globe.`,
   },
 ];
 
