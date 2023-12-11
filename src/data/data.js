@@ -538,6 +538,33 @@ export const Hometwo_data = [
       `${Marquee_image8}`,
     ],
   },
+  {
+    title: "COURSES",
+    subtitle: `Discover Lifelong Learning`,
+    buttonContent: "View all courses",
+  },
+  {
+    title: "About us",
+    desc: `Eduplan student consultancy is one of the renowned international
+    education consultancy firms which assisting overseas students`,
+    desc2: `Transform your life through education `,
+    imageLink: `${Aboutimage}`,
+    buttonContent: " Get Free Consultation",
+    content: [
+      {
+        imageLink: `${AboutIconimage}`,
+        desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
+      },
+      {
+        imageLink: `${AboutIconimage}`,
+        desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
+      },
+      {
+        imageLink: `${AboutIconimage}`,
+        desc: `Get life-time free access with one time payment in our courses plan. Easy & simple!`,
+      },
+    ],
+  },
 ];
 
 export const About_us = [

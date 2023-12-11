@@ -83,7 +83,14 @@ function App() {
         />
         <Route
           path="/home-two"
-          element={<Home2 data={Hometwo_data[0]} data2={Hometwo_data[1]} />}
+          element={
+            <Home2
+              data={Hometwo_data[0]}
+              data2={Hometwo_data[1]}
+              data3={Hometwo_data[2]}
+              data4={Hometwo_data[3]}
+            />
+          }
         />
         <Route
           path="/about-us"
