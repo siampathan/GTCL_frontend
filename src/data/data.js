@@ -142,6 +142,13 @@ import Category_image12 from "../assets/img/sections/categories/heacker.png";
 import Conference_image from "../assets/img/sections/about/conference.png";
 import Paperroll_image from "../assets/img/shapes/paper-roll.png";
 
+import Course_poster from "../assets/img/course-list/01.jpg";
+import Course_playimage from "../assets/img/course-list/play.png";
+import Coursebar_image from "../assets/img/course-list/bar.png";
+import Coursemini_poster from "../assets/img/related-course/01.jpg";
+
+import Instructor_image from "../assets/img/comment/instructor/01.png";
+
 export const Navbar_data = [
   {
     imageLink: `${Logo}`,
@@ -195,6 +202,10 @@ export const Navbar_data = [
       {
         title: "All Course With Widget",
         link: "all-course-widget",
+      },
+      {
+        title: "Course Details",
+        link: "course-details",
       },
       {
         title: "Apply Online",
@@ -1452,6 +1463,140 @@ export const Course_widget = [
         time: `23 hr 54 min`,
       },
     ],
+  },
+];
+
+export const Course_details = [
+  {
+    title: `Become a professional Web Developer from Scratch`,
+    desc: `This course covers all you need to know about becoming a
+    top skilled web developer even if you never`,
+    desc2: `programmed before!`,
+    rating: 4.8,
+    ratingNum: `1,843`,
+    reviewNum: 483,
+  },
+  {
+    title: `What you'll learn`,
+    desc: `Charles tickety-boo squiffy nice one cockup pardon you get stuffed mate
+    my good sir geeza. Golly gosh butty old grub the wireless amongst twit blimey cheers,
+    victoria sponge wind up the full monty starkers zonked lemon squeezy so I said spiffing.!`,
+    content: [
+      `"The Complete Freelancer Guide" e-Book`,
+      `30 Free Responsive Templates`,
+      `Make REAL life web apps with our final projects`,
+      `PDF Manuals and Guides`,
+      `Massive Q&A Community`,
+      `Improvement Suggestions for Course`,
+      `Learn to get free hosting forever`,
+      `All Lectures and Projects Source Codes`,
+    ],
+  },
+  {
+    title: `Course Description`,
+    desc: `"Become a Web Developer from Scratch" is probably
+    one of the most complete and comprehensive online courses you will ever get to see
+    covering web development from top to bottom. In more than 30 hours of content, this
+    course will cover all you need to know about how to become a top skilled web
+    developer even if you never programmed before.`,
+    content: [
+      `A beautiful portfolio website that you can use as your own`,
+      `Professional career complete guidance for the 2016 tech
+      market`,
+      `The Complete Freelancer E-Book`,
+      `30 beautiful HTML5 responsive templates`,
+      `110+ functional forms package`,
+    ],
+  },
+  {
+    title: `Who this course is for:`,
+    desc: `"Become a Web Developer from Scratch" is probably
+    one of the most complete and comprehensive online courses you will ever get to see
+    covering web development from top to bottom. In more than 30 hours of content, this
+    course will cover all you need to know about how to become a top skilled web
+    developer even if you never programmed before.`,
+    content: [
+      `Programmers or non-programmers.`,
+      `Aspiring Developers.`,
+      `Entrepeneurs.`,
+      `No age limit.`,
+      `Students.`,
+    ],
+  },
+  {
+    imageLink: `${Course_poster}`,
+    imageLink2: `${Course_playimage}`,
+    imageLink3: `${Coursebar_image}`,
+    price: 25.5,
+    enrolledNum: 457962,
+    buttonContent: `Add To Cart`,
+    buttonContent2: `Buy Now`,
+    garunteTag: `30-Day Money-Back Guarantee`,
+    featureTitle: `This course includes:`,
+    content: [
+      `25 hours on-demand video`,
+      `4 articles`,
+      `97 downloadable resources`,
+      `Full lifetime access`,
+      `Access on mobile and TV`,
+    ],
+    featureTitle2: `Training 6 or more people?`,
+    desc: `Get your team access to 16,000+ top Udemy courses anytime,
+    anywhere.`,
+    buttonContent3: `Try for business`,
+  },
+  {
+    title: "Simillar courses student bought",
+    content: [
+      {
+        imageLink: `${Coursemini_poster}`,
+        title: `Self development- Be your own boss`,
+        rating: 4.8,
+        ratingNum: 756,
+        enrolledNum: 97538,
+        price: 84.5,
+      },
+      {
+        imageLink: `${Coursemini_poster}`,
+        title: `Self development- Be your own boss`,
+        rating: 4.8,
+        ratingNum: 756,
+        enrolledNum: 97538,
+        price: 84.5,
+      },
+      {
+        imageLink: `${Coursemini_poster}`,
+        title: `Self development- Be your own boss`,
+        rating: 4.8,
+        ratingNum: 756,
+        enrolledNum: 97538,
+        price: 84.5,
+      },
+      {
+        imageLink: `${Coursemini_poster}`,
+        title: `Self development- Be your own boss`,
+        rating: 4.8,
+        ratingNum: 756,
+        enrolledNum: 97538,
+        price: 84.5,
+      },
+    ],
+  },
+  {
+    title: "Instructor Profile",
+    imageLink: `${Instructor_image}`,
+    instructorTitle: "Arlene McCoy",
+    instructorPost: "Senior Consultants, Eduplan",
+    desc: `I'm a passionate techie, always loved computers and technology in
+    general. I've been coding websites since 2009 and in 2011 I became an instructor
+    at Udemy, an emergent e-learning platform that eventually became the world
+    leader of Online Education. In that same year I've put together an extensive
+    programming course on Udemy covering web development from top to bottom, under
+    the name "Become a Web Developer from Scratch", which still stands as one of
+    Udemy top-sellers of all time.`,
+    title2: "Student feedbacks",
+    ratingNum: 4.5,
+    ratingContent: "Course rating",
   },
 ];
 

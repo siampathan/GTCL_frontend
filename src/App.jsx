@@ -27,6 +27,7 @@ import {
   Apply_online,
   About_instructor,
   Course_widget,
+  Course_details,
   All_courses,
   Blog_section,
   Blogright_section,
@@ -54,6 +55,7 @@ import BlogClassic from "./components/blogClassic/blogClassic";
 import Footer from "./components/footer/footer";
 import BlogDetails from "./components/blogDetails/blogDetails";
 import Home2 from "./components/home2/home2";
+import CourseDetails from "./pages/courseDetails/courseDetails";
 
 function App() {
   return (
@@ -164,6 +166,20 @@ function App() {
         <Route
           path="all-course-widget"
           element={<CourseWidget data={Course_widget[0]} />}
+        />
+        <Route
+          path="/course-details"
+          element={
+            <CourseDetails
+              data={Course_details[0]}
+              data2={Course_details[1]}
+              data3={Course_details[2]}
+              data4={Course_details[3]}
+              data5={Course_details[4]}
+              data6={Course_details[5]}
+              data7={Course_details[6]}
+            />
+          }
         />
         <Route
           path="/apply-online"
