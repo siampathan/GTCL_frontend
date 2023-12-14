@@ -2,8 +2,12 @@ import Marquee from "react-fast-marquee";
 import AboutPosterSection from "../aboutPosterSection/aboutPosterSection";
 import CounterWrap from "../counterWrap/counterWrap";
 import Arrow_image from "../../assets/img/icon/arrow-right.svg";
-import "./home2-style.css";
 import NewsSection from "../newsSection/newsSection";
+import Slider from "react-slick";
+import Poster_image from "../../assets/img/sections/courses/courses-01.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./home2-style.css";
 
 const Home2 = ({
   data,
@@ -21,6 +25,18 @@ const Home2 = ({
   let contents = data4.content;
   let contents2 = data5.content;
   let contents3 = data6.content;
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
   return (
     <>
       <div className="nav_bg">
@@ -129,298 +145,273 @@ const Home2 = ({
             <div className="row">
               <div className="col-lg-12">
                 <div className="slider-wrapper">
-                  {/* <div
-                    className="slick-main slick-main global-slick-init dots-style-03 dots-space"
-                    data-infinite="true"
-                    data-arrows="true"
-                    data-fade="false"
-                    data-speed={500}
-                    data-slidestoshow={3}
-                    data-slidestoscroll={1}
-                    data-swipetoslide="true"
-                    data-autoplay="false"
-                    data-autoplayspeed={2500}
-                    data-dots="true"
-                    data-responsive='[
-                                  {"breakpoint": 1367,"settings": {"slidesToShow": 3}},
-                                  {"breakpoint": 992,"settings": {"slidesToShow": 2}},
-                                  {"breakpoint": 600, "settings": {"slidesToShow": 1}}
-                                  ]'
-                  >
-                    <div className="slick-item">
-                      <div className="course-single-item">
-                        <div className="thumbnail">
-                          <img
-                            src="assets/img/sections/courses/courses-01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="content">
-                          <p className="instructor">Harverd University</p>
-                          <h6 className="course-name">
-                            Become Ethereum Blockchain Developer
-                          </h6>
-                          <div className="ratings">
-                            <div className="icon">
-                              <img src="assets/img/icon/star.png" alt="" />
-                              <span>4.8 (756)</span>
-                            </div>
-                            <h6 className="price">$25.50</h6>
+                  <div className="slick-main slick-main global-slick-init dots-style-03 dots-space">
+                    <Slider {...settings}>
+                      <div className="slick-item">
+                        <div className="course-single-item">
+                          <div className="thumbnail">
+                            <img src={Poster_image} alt="" />
                           </div>
-                        </div>
-                        <div className="overlay-content">
-                          <p className="instructor">Leslie Alexander</p>
-                          <h6 className="course-name">
-                            Beginner friendly web development course A2Z
-                          </h6>
-                          <p>
-                            We have professional alliance's with leading
-                            Universities Colleges around the world.
-                          </p>
-                          <div className="duration">
-                            <div className="user">
-                              <img
-                                src="assets/img/icon/2people.png"
-                                alt="group"
-                              />
-                              <span>548796</span>
-                            </div>
-                            <div className="hours">
-                              <img
-                                src="assets/img/icon/clock.png"
-                                alt="clock-image"
-                              />
-                              <span>23 hr 54 min</span>
+                          <div className="content">
+                            <p className="instructor">Harverd University</p>
+                            <h6 className="course-name">
+                              Become Ethereum Blockchain Developer
+                            </h6>
+                            <div className="ratings">
+                              <div className="icon">
+                                <img src="assets/img/icon/star.png" alt="" />
+                                <span>4.8 (756)</span>
+                              </div>
+                              <h6 className="price">$25.50</h6>
                             </div>
                           </div>
-                          <div className="video-wrap">
-                            <a
-                              className="video-popup mfp-iframe"
-                              href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
-                            >
-                              <svg
-                                width={15}
-                                height={16}
-                                viewBox="0 0 15 16"
-                                fill="none"
-                              >
-                                <path
-                                  d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
-                                  fill="white"
+                          <div className="overlay-content">
+                            <p className="instructor">Leslie Alexander</p>
+                            <h6 className="course-name">
+                              Beginner friendly web development course A2Z
+                            </h6>
+                            <p>
+                              We have professional alliance's with leading
+                              Universities Colleges around the world.
+                            </p>
+                            <div className="duration">
+                              <div className="user">
+                                <img
+                                  src="assets/img/icon/2people.png"
+                                  alt="group"
                                 />
-                              </svg>
-                            </a>
-                            <span>Watch Intro</span>
+                                <span>548796</span>
+                              </div>
+                              <div className="hours">
+                                <img
+                                  src="assets/img/icon/clock.png"
+                                  alt="clock-image"
+                                />
+                                <span>23 hr 54 min</span>
+                              </div>
+                            </div>
+                            <div className="video-wrap">
+                              <a
+                                className="video-popup mfp-iframe"
+                                href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                              >
+                                <svg
+                                  width={15}
+                                  height={16}
+                                  viewBox="0 0 15 16"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </a>
+                              <span>Watch Intro</span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="slick-item">
-                      <div className="course-single-item">
-                        <div className="thumbnail">
-                          <img
-                            src="assets/img/sections/courses/courses-02.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="content">
-                          <p className="instructor">Esther Howard</p>
-                          <h6 className="course-name">
-                            Learn Python: The Complete Python
-                          </h6>
-                          <div className="ratings">
-                            <div className="icon">
-                              <img src="assets/img/icon/star.png" alt="" />
-                              <span>4.8 (756)</span>
-                            </div>
-                            <h6 className="price">$25.50</h6>
+
+                      <div className="slick-item">
+                        <div className="course-single-item">
+                          <div className="thumbnail">
+                            <img src={Poster_image} alt="" />
                           </div>
-                        </div>
-                        <div className="overlay-content">
-                          <p className="instructor">Leslie Alexander</p>
-                          <h6 className="course-name">
-                            Beginner friendly web development course A2Z
-                          </h6>
-                          <p>
-                            We have professional alliance's with leading
-                            Universities Colleges around the world.
-                          </p>
-                          <div className="duration">
-                            <div className="user">
-                              <img
-                                src="assets/img/icon/2people.png"
-                                alt="group"
-                              />
-                              <span>548796</span>
-                            </div>
-                            <div className="hours">
-                              <img
-                                src="assets/img/icon/clock.png"
-                                alt="clock-image"
-                              />
-                              <span>23 hr 54 min</span>
+                          <div className="content">
+                            <p className="instructor">Harverd University</p>
+                            <h6 className="course-name">
+                              Become Ethereum Blockchain Developer
+                            </h6>
+                            <div className="ratings">
+                              <div className="icon">
+                                <img src="assets/img/icon/star.png" alt="" />
+                                <span>4.8 (756)</span>
+                              </div>
+                              <h6 className="price">$25.50</h6>
                             </div>
                           </div>
-                          <div className="video-wrap">
-                            <a
-                              className="video-popup mfp-iframe"
-                              href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
-                            >
-                              <svg
-                                width={15}
-                                height={16}
-                                viewBox="0 0 15 16"
-                                fill="none"
-                              >
-                                <path
-                                  d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
-                                  fill="white"
+                          <div className="overlay-content">
+                            <p className="instructor">Leslie Alexander</p>
+                            <h6 className="course-name">
+                              Beginner friendly web development course A2Z
+                            </h6>
+                            <p>
+                              We have professional alliance's with leading
+                              Universities Colleges around the world.
+                            </p>
+                            <div className="duration">
+                              <div className="user">
+                                <img
+                                  src="assets/img/icon/2people.png"
+                                  alt="group"
                                 />
-                              </svg>
-                            </a>
-                            <span>Watch Intro</span>
+                                <span>548796</span>
+                              </div>
+                              <div className="hours">
+                                <img
+                                  src="assets/img/icon/clock.png"
+                                  alt="clock-image"
+                                />
+                                <span>23 hr 54 min</span>
+                              </div>
+                            </div>
+                            <div className="video-wrap">
+                              <a
+                                className="video-popup mfp-iframe"
+                                href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                              >
+                                <svg
+                                  width={15}
+                                  height={16}
+                                  viewBox="0 0 15 16"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </a>
+                              <span>Watch Intro</span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="slick-item">
-                      <div className="course-single-item">
-                        <div className="thumbnail">
-                          <img
-                            src="assets/img/sections/courses/courses-03.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="content">
-                          <p className="instructor">Leslie Alexander</p>
-                          <h6 className="course-name">
-                            Data Science and Machine Learning Bootcamp
-                          </h6>
-                          <div className="ratings">
-                            <div className="icon">
-                              <img src="assets/img/icon/star.png" alt="" />
-                              <span>4.8 (756)</span>
-                            </div>
-                            <h6 className="price">$25.50</h6>
+
+                      <div className="slick-item">
+                        <div className="course-single-item">
+                          <div className="thumbnail">
+                            <img src={Poster_image} alt="" />
                           </div>
-                        </div>
-                        <div className="overlay-content">
-                          <p className="instructor">Leslie Alexander</p>
-                          <h6 className="course-name">
-                            Beginner friendly web development course A2Z
-                          </h6>
-                          <p>
-                            We have professional alliance's with leading
-                            Universities Colleges around the world.
-                          </p>
-                          <div className="duration">
-                            <div className="user">
-                              <img
-                                src="assets/img/icon/2people.png"
-                                alt="group"
-                              />
-                              <span>548796</span>
-                            </div>
-                            <div className="hours">
-                              <img
-                                src="assets/img/icon/clock.png"
-                                alt="clock-image"
-                              />
-                              <span>23 hr 54 min</span>
+                          <div className="content">
+                            <p className="instructor">Harverd University</p>
+                            <h6 className="course-name">
+                              Become Ethereum Blockchain Developer
+                            </h6>
+                            <div className="ratings">
+                              <div className="icon">
+                                <img src="assets/img/icon/star.png" alt="" />
+                                <span>4.8 (756)</span>
+                              </div>
+                              <h6 className="price">$25.50</h6>
                             </div>
                           </div>
-                          <div className="video-wrap">
-                            <a
-                              className="video-popup mfp-iframe"
-                              href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
-                            >
-                              <svg
-                                width={15}
-                                height={16}
-                                viewBox="0 0 15 16"
-                                fill="none"
-                              >
-                                <path
-                                  d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
-                                  fill="white"
+                          <div className="overlay-content">
+                            <p className="instructor">Leslie Alexander</p>
+                            <h6 className="course-name">
+                              Beginner friendly web development course A2Z
+                            </h6>
+                            <p>
+                              We have professional alliance's with leading
+                              Universities Colleges around the world.
+                            </p>
+                            <div className="duration">
+                              <div className="user">
+                                <img
+                                  src="assets/img/icon/2people.png"
+                                  alt="group"
                                 />
-                              </svg>
-                            </a>
-                            <span>Watch Intro</span>
+                                <span>548796</span>
+                              </div>
+                              <div className="hours">
+                                <img
+                                  src="assets/img/icon/clock.png"
+                                  alt="clock-image"
+                                />
+                                <span>23 hr 54 min</span>
+                              </div>
+                            </div>
+                            <div className="video-wrap">
+                              <a
+                                className="video-popup mfp-iframe"
+                                href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                              >
+                                <svg
+                                  width={15}
+                                  height={16}
+                                  viewBox="0 0 15 16"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </a>
+                              <span>Watch Intro</span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="slick-item">
-                      <div className="course-single-item">
-                        <div className="thumbnail">
-                          <img
-                            src="assets/img/sections/courses/courses-04.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="content">
-                          <p className="instructor">Ralph Edwards</p>
-                          <h6 className="course-name">
-                            The Ultimate Drawing Course - Beginner
-                          </h6>
-                          <div className="ratings">
-                            <div className="icon">
-                              <img src="assets/img/icon/star.png" alt="" />
-                              <span>4.8 (756)</span>
-                            </div>
-                            <h6 className="price">$25.50</h6>
+
+                      <div className="slick-item">
+                        <div className="course-single-item">
+                          <div className="thumbnail">
+                            <img src={Poster_image} alt="" />
                           </div>
-                        </div>
-                        <div className="overlay-content">
-                          <p className="instructor">Leslie Alexander</p>
-                          <h6 className="course-name">
-                            Beginner friendly web development course A2Z
-                          </h6>
-                          <p>
-                            We have professional alliance's with leading
-                            Universities Colleges around the world.
-                          </p>
-                          <div className="duration">
-                            <div className="user">
-                              <img
-                                src="assets/img/icon/2people.png"
-                                alt="group"
-                              />
-                              <span>548796</span>
-                            </div>
-                            <div className="hours">
-                              <img
-                                src="assets/img/icon/clock.png"
-                                alt="clock-image"
-                              />
-                              <span>23 hr 54 min</span>
+                          <div className="content">
+                            <p className="instructor">Harverd University</p>
+                            <h6 className="course-name">
+                              Become Ethereum Blockchain Developer
+                            </h6>
+                            <div className="ratings">
+                              <div className="icon">
+                                <img src="assets/img/icon/star.png" alt="" />
+                                <span>4.8 (756)</span>
+                              </div>
+                              <h6 className="price">$25.50</h6>
                             </div>
                           </div>
-                          <div className="video-wrap">
-                            <a
-                              className="video-popup mfp-iframe"
-                              href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
-                            >
-                              <svg
-                                width={15}
-                                height={16}
-                                viewBox="0 0 15 16"
-                                fill="none"
-                              >
-                                <path
-                                  d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
-                                  fill="white"
+                          <div className="overlay-content">
+                            <p className="instructor">Leslie Alexander</p>
+                            <h6 className="course-name">
+                              Beginner friendly web development course A2Z
+                            </h6>
+                            <p>
+                              We have professional alliance's with leading
+                              Universities Colleges around the world.
+                            </p>
+                            <div className="duration">
+                              <div className="user">
+                                <img
+                                  src="assets/img/icon/2people.png"
+                                  alt="group"
                                 />
-                              </svg>
-                            </a>
-                            <span>Watch Intro</span>
+                                <span>548796</span>
+                              </div>
+                              <div className="hours">
+                                <img
+                                  src="assets/img/icon/clock.png"
+                                  alt="clock-image"
+                                />
+                                <span>23 hr 54 min</span>
+                              </div>
+                            </div>
+                            <div className="video-wrap">
+                              <a
+                                className="video-popup mfp-iframe"
+                                href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                              >
+                                <svg
+                                  width={15}
+                                  height={16}
+                                  viewBox="0 0 15 16"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M2.61196 0.352787C1.16948 -0.474644 0 0.203197 0 1.86558V14.1332C0 15.7973 1.16948 16.4742 2.61196 15.6476L13.3345 9.49828C14.7775 8.67055 14.7775 7.32952 13.3345 6.50199L2.61196 0.352787Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </a>
+                              <span>Watch Intro</span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div> */}
-                  <h2>Card Slider ....</h2>
+                    </Slider>
+                  </div>
                 </div>
               </div>
             </div>
