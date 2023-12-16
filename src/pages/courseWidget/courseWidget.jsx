@@ -1,3 +1,5 @@
+import Pagination from "../../components/pagination/pagination";
+
 const CourseWidget = ({ data }) => {
   let contents = data.content;
   return (
@@ -161,7 +163,7 @@ const CourseWidget = ({ data }) => {
                   );
                 })}
               </div>
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-lg-12">
                   <div className="pagination">
                     <ul className="pagination-list">
@@ -193,7 +195,8 @@ const CourseWidget = ({ data }) => {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <Pagination />
             </div>
           </div>
         </div>

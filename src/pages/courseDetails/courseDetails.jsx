@@ -10,7 +10,7 @@ const CourseDetails = ({ data, data2, data3, data4, data5, data6, data7 }) => {
   let contents4 = data5.content;
   let contents5 = data6.content;
   return (
-    <div className="course-details-wrapper single-page-section-top-space single-page-section-bottom-space">
+    <div className="course-details-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <div className="container custom-container-01">
         <div className="row">
           <div className="col-lg-7 col-xl-8">

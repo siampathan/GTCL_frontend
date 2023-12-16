@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import AboutPosterSection from "../aboutPosterSection/aboutPosterSection";
 import CounterWrap from "../counterWrap/counterWrap";
@@ -30,8 +31,6 @@ const Home2 = ({
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     slidesToShow: 3,
@@ -135,9 +134,9 @@ const Home2 = ({
                     <h4 className="title">{data3?.title}</h4>
                   </div>
                   <div className="btn-wrap">
-                    <a href="course.html" className="btn-common fill-btn">
+                    <Link to="/blog" className="btn-common fill-btn">
                       {data3?.buttonContent}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -547,27 +546,10 @@ const Home2 = ({
                 </div>
               </div>
             </div>
-            <h2>Card SLider ....</h2>
-            {/* <div className="row">
+            {/* <h2>Card SLider ....</h2> */}
+            <div className="row">
               <div className="col-lg-12">
-                <div
-                  className="slick-main slick-main global-slick-init dots-style-03 dots-space"
-                  data-infinite="true"
-                  data-arrows="true"
-                  data-fade="false"
-                  data-speed={500}
-                  data-slidestoshow={3}
-                  data-slidestoscroll={1}
-                  data-swipetoslide="true"
-                  data-autoplay="true"
-                  data-autoplayspeed={2500}
-                  data-dots="true"
-                  data-responsive='[
-                              {"breakpoint": 1367,"settings": {"slidesToShow": 3}},
-                              {"breakpoint": 992,"settings": {"slidesToShow": 2}},
-                              {"breakpoint": 600, "settings": {"slidesToShow": 1}}
-                              ]'
-                >
+                <div className="slick-main slick-main global-slick-init dots-style-03 dots-space">
                   <div className="slick-item">
                     <div className="testimonial-single-items style-01">
                       <div className="feedback-wrap">
@@ -766,7 +748,7 @@ const Home2 = ({
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </section>
 

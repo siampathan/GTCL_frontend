@@ -1,4 +1,5 @@
 import BlogrightSection from "../blogrightSection/blogrightSection";
+import Pagination from "../pagination/pagination";
 
 const BlogClassic = ({ data, data2, data3, data4 }) => {
   let wrapContent = data2.overContent;
@@ -56,41 +57,7 @@ const BlogClassic = ({ data, data2, data3, data4 }) => {
                   })}
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="blog-pagination margin-bottom-30 desktop-center mobile-left">
-                    <div className="pagination">
-                      <ul className="pagination-list">
-                        <li>
-                          <a href="#" className="page-number able left-arrow">
-                            PREV
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="page-number current">
-                            01
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="page-number">
-                            02
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="page-number">
-                            03
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="page-number able right-arrow">
-                            NEXT
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Pagination />
             </div>
 
             <BlogrightSection data={data3} data2={data4} />
