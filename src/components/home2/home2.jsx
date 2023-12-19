@@ -546,206 +546,208 @@ const Home2 = ({
                 </div>
               </div>
             </div>
-            {/* <h2>Card SLider ....</h2> */}
+
             <div className="row">
               <div className="col-lg-12">
                 <div className="slick-main slick-main global-slick-init dots-style-03 dots-space">
-                  <div className="slick-item">
-                    <div className="testimonial-single-items style-01">
-                      <div className="feedback-wrap">
-                        <ul className="ul feedback-icon-list">
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="content">
-                        <p className="feedback-text">
-                          “I able to prove potential employers that i have a
-                          solid understanding of computers &amp; hardware- and
-                          started to receive real, viable job offers”.
-                        </p>
-                      </div>
-                      <div className="client-and-quote">
-                        <div className="client-details">
-                          <div className="thumb">
-                            <img
-                              src="assets/img/sections/testimonial/tesi-01.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="content">
-                            <p className="client-name">Savannah Nguyen</p>
-                            <p className="designation">
-                              Central African Republic
-                            </p>
-                          </div>
+                  <Slider {...settings}>
+                    <div className="slick-item">
+                      <div className="testimonial-single-items style-01">
+                        <div className="feedback-wrap">
+                          <ul className="ul feedback-icon-list">
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                          </ul>
                         </div>
-                        <div className="quote">
-                          <i className="fa-solid fa-quote-right icon" />
+                        <div className="content">
+                          <p className="feedback-text">
+                            “I able to prove potential employers that i have a
+                            solid understanding of computers &amp; hardware- and
+                            started to receive real, viable job offers”.
+                          </p>
+                        </div>
+                        <div className="client-and-quote">
+                          <div className="client-details">
+                            <div className="thumb">
+                              <img
+                                src="assets/img/sections/testimonial/tesi-01.png"
+                                alt=""
+                              />
+                            </div>
+                            <div className="content">
+                              <p className="client-name">Savannah Nguyen</p>
+                              <p className="designation">
+                                Central African Republic
+                              </p>
+                            </div>
+                          </div>
+                          <div className="quote">
+                            <i className="fa-solid fa-quote-right icon" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="slick-item">
-                    <div className="testimonial-single-items style-01">
-                      <div className="feedback-wrap">
-                        <ul className="ul feedback-icon-list">
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="content">
-                        <p className="feedback-text">
-                          “I able to prove potential employers that i have a
-                          solid understanding of computers &amp; hardware- and
-                          started to receive real, viable job offers”.
-                        </p>
-                      </div>
-                      <div className="client-and-quote">
-                        <div className="client-details">
-                          <div className="thumb">
-                            <img
-                              src="assets/img/sections/testimonial/testi-02.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="content">
-                            <p className="client-name">Savannah Nguyen</p>
-                            <p className="designation">
-                              Central African Republic
-                            </p>
-                          </div>
+                    <div className="slick-item">
+                      <div className="testimonial-single-items style-01">
+                        <div className="feedback-wrap">
+                          <ul className="ul feedback-icon-list">
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                          </ul>
                         </div>
-                        <div className="quote">
-                          <i className="fa-solid fa-quote-right icon" />
+                        <div className="content">
+                          <p className="feedback-text">
+                            “I able to prove potential employers that i have a
+                            solid understanding of computers &amp; hardware- and
+                            started to receive real, viable job offers”.
+                          </p>
+                        </div>
+                        <div className="client-and-quote">
+                          <div className="client-details">
+                            <div className="thumb">
+                              <img
+                                src="assets/img/sections/testimonial/testi-02.png"
+                                alt=""
+                              />
+                            </div>
+                            <div className="content">
+                              <p className="client-name">Savannah Nguyen</p>
+                              <p className="designation">
+                                Central African Republic
+                              </p>
+                            </div>
+                          </div>
+                          <div className="quote">
+                            <i className="fa-solid fa-quote-right icon" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="slick-item">
-                    <div className="testimonial-single-items style-01">
-                      <div className="feedback-wrap">
-                        <ul className="ul feedback-icon-list">
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="content">
-                        <p className="feedback-text">
-                          “I able to prove potential employers that i have a
-                          solid understanding of computers &amp; hardware- and
-                          started to receive real, viable job offers”.
-                        </p>
-                      </div>
-                      <div className="client-and-quote">
-                        <div className="client-details">
-                          <div className="thumb">
-                            <img
-                              src="assets/img/sections/testimonial/testi-03.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="content">
-                            <p className="client-name">Savannah Nguyen</p>
-                            <p className="designation">
-                              Central African Republic
-                            </p>
-                          </div>
+                    <div className="slick-item">
+                      <div className="testimonial-single-items style-01">
+                        <div className="feedback-wrap">
+                          <ul className="ul feedback-icon-list">
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                          </ul>
                         </div>
-                        <div className="quote">
-                          <i className="fa-solid fa-quote-right icon" />
+                        <div className="content">
+                          <p className="feedback-text">
+                            “I able to prove potential employers that i have a
+                            solid understanding of computers &amp; hardware- and
+                            started to receive real, viable job offers”.
+                          </p>
+                        </div>
+                        <div className="client-and-quote">
+                          <div className="client-details">
+                            <div className="thumb">
+                              <img
+                                src="assets/img/sections/testimonial/testi-03.png"
+                                alt=""
+                              />
+                            </div>
+                            <div className="content">
+                              <p className="client-name">Savannah Nguyen</p>
+                              <p className="designation">
+                                Central African Republic
+                              </p>
+                            </div>
+                          </div>
+                          <div className="quote">
+                            <i className="fa-solid fa-quote-right icon" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="slick-item">
-                    <div className="testimonial-single-items style-01">
-                      <div className="feedback-wrap">
-                        <ul className="ul feedback-icon-list">
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                          <li className="single-feedback-item">
-                            <i className="fas fa-star icon" />
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="content">
-                        <p className="feedback-text">
-                          “I able to prove potential employers that i have a
-                          solid understanding of computers &amp; hardware- and
-                          started to receive real, viable job offers”.
-                        </p>
-                      </div>
-                      <div className="client-and-quote">
-                        <div className="client-details">
-                          <div className="thumb">
-                            <img
-                              src="assets/img/sections/testimonial/testi-03.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="content">
-                            <p className="client-name">Savannah Nguyen</p>
-                            <p className="designation">
-                              Central African Republic
-                            </p>
-                          </div>
+                    <div className="slick-item">
+                      <div className="testimonial-single-items style-01">
+                        <div className="feedback-wrap">
+                          <ul className="ul feedback-icon-list">
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                            <li className="single-feedback-item">
+                              <i className="fas fa-star icon" />
+                            </li>
+                          </ul>
                         </div>
-                        <div className="quote">
-                          <i className="fa-solid fa-quote-right icon" />
+                        <div className="content">
+                          <p className="feedback-text">
+                            “I able to prove potential employers that i have a
+                            solid understanding of computers &amp; hardware- and
+                            started to receive real, viable job offers”.
+                          </p>
+                        </div>
+                        <div className="client-and-quote">
+                          <div className="client-details">
+                            <div className="thumb">
+                              <img
+                                src="assets/img/sections/testimonial/testi-03.png"
+                                alt=""
+                              />
+                            </div>
+                            <div className="content">
+                              <p className="client-name">Savannah Nguyen</p>
+                              <p className="designation">
+                                Central African Republic
+                              </p>
+                            </div>
+                          </div>
+                          <div className="quote">
+                            <i className="fa-solid fa-quote-right icon" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Slider>
                 </div>
               </div>
             </div>
