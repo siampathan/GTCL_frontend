@@ -148,6 +148,11 @@ import Coursebar_image from "../assets/img/course-list/bar.png";
 import Coursemini_poster from "../assets/img/related-course/01.jpg";
 
 import Instructor_image from "../assets/img/comment/instructor/01.png";
+import axios from "axios";
+import { API_Link } from "../components/api/api";
+import { useState, useEffect } from "react";
+
+useEffect;
 
 export const Navbar_data = [
   {

@@ -1,6 +1,21 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
 import FaqWrap from "../faqWrap/faqWrap";
 
+import { API_Link } from "../api/api";
+
 const FaqSection = ({ data }) => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    getItems();
+  }, []);
+
+  const getItems = async (req, res) => {
+    const response = await axios.get(`${API_Link}/faq/info`);
+    setItems(response.data);
+  };
+
   return (
     <section className="faq-section-area margin-top-90">
       <div className="container custom-container-01">

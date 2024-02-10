@@ -36,7 +36,7 @@ import {
   Footer_section,
 } from "./data/data";
 import AboutUs from "./components/aboutUs/aboutUs";
-import OurServices from "./pages/ourServices/ourServices";
+import Gallery from "./pages/ourGallery/ourGallery";
 import ServicesDetails from "./pages/servicesDetails/servicesDetails";
 import OurTeam from "./pages/ourTeam/ourTeam";
 import Instructors from "./pages/instructors/instructors";
@@ -56,6 +56,7 @@ import Footer from "./components/footer/footer";
 import BlogDetails from "./components/blogDetails/blogDetails";
 import Home2 from "./components/home2/home2";
 import CourseDetails from "./pages/courseDetails/courseDetails";
+import TeacherDetails from "./pages/teacherDetails/teacherDetails";
 
 function App() {
   return (
@@ -112,7 +113,7 @@ function App() {
         />
         <Route
           path="/our-services"
-          element={<OurServices data={Our_services[0]} />}
+          element={<Gallery data={Our_services[0]} />}
         />
         <Route
           path="/services-details"
@@ -200,10 +201,7 @@ function App() {
           element={<FaqPage data={Faq_section[0]} data2={Faq_section[1]} />}
         />
         <Route path="/not-found" element={<NotFound data={Not_found[0]} />} />
-        <Route
-          path="/empty-cart"
-          element={<EmptyCart data={Cart_empty[0]} />}
-        />
+        <Route path="/brochure" element={<EmptyCart data={Cart_empty[0]} />} />
         <Route
           path="/blog"
           element={
@@ -242,6 +240,8 @@ function App() {
             />
           }
         />
+        <Route path="/teacher-details/:id" element={<TeacherDetails />} />
+        <Route path="/course-details/:id" element={</>} />
       </Routes>
       <Footer data={Footer_section[0]} data2={Footer_section[1]} />
     </>

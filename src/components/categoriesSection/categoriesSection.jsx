@@ -1,5 +1,32 @@
+import axios from "axios";
+import { Link } from "react-router-dom";
+
+import { useState, useEffect } from "react";
+
+import { API_Link } from "../api/api";
+import "./categoriesSection-style.css";
+
 const CategoriesSection = ({ data }) => {
-  let contents = data.content;
+  const [courses, setCourses] = useState([]);
+  const [teachers, setTeachers] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [coursesResponse, teachersResponses] = await Promise.all([
+          axios.get(`${API_Link}/courses/info`),
+          axios.get(`${API_Link}/teachers/info`),
+        ]);
+
+        setCourses(coursesResponse.data);
+        setTeachers(teachersResponses.data);
+      } catch (err) {
+        console.error(err.message);
+      }
+    };
+    fetchData();
+  }, []);
+
   let contents2 = data.content2;
   return (
     <section className="category-section-area">
@@ -19,7 +46,7 @@ const CategoriesSection = ({ data }) => {
                     data-bs-toggle="pill"
                     data-bs-target="#discipline"
                   >
-                    {data?.button}
+                    Courses
                   </a>
                 </li>
                 <li className="nav-item">
@@ -29,7 +56,7 @@ const CategoriesSection = ({ data }) => {
                     data-bs-toggle="pill"
                     data-bs-target="#collage"
                   >
-                    {data?.button2}
+                    Teachers
                   </a>
                 </li>
               </ul>
@@ -39,18 +66,18 @@ const CategoriesSection = ({ data }) => {
         <div className="tab-content">
           <div className="tab-pane fade show active" id="discipline">
             <div className="destination-items-wrap">
-              {contents?.map((item, indx) => {
+              {courses?.map((item) => {
                 return (
                   <div
                     className="destination-single-item style-01 shadow"
-                    key={indx}
+                    key={item.id}
                   >
-                    <div className="thumbnail">
-                      <img src={item.imageLink} alt="" />
-                    </div>
-                    <h6 className="name">
-                      {item.title} <br /> {item.subtitle}
-                    </h6>
+                    <Link to={``}>
+                      <div className="thumbnail">
+                        <img src={item.url} alt="photo" />
+                      </div>
+                      <h6 className="name"> {item.title} </h6>
+                    </Link>
                   </div>
                 );
               })}
@@ -58,15 +85,18 @@ const CategoriesSection = ({ data }) => {
           </div>
           <div className="tab-pane fade" id="collage">
             <div className="destination-items-wrap">
-              {contents2?.map((item, indx) => {
+              {teachers.map((item) => {
                 return (
-                  <div className="destination-single-item style-01" key={indx}>
-                    <div className="thumbnail">
-                      <img src={item.imageLink} alt="" />
-                    </div>
-                    <h6 className="name">
-                      {item.title} <br /> {item.subtitle}
-                    </h6>
+                  <div
+                    className="destination-single-item style-01"
+                    key={item.id}
+                  >
+                    <Link to={`/teacher-details/${item.id}`}>
+                      <div className="thumbnail">
+                        <img src={item.url} alt="photo" />
+                      </div>
+                      <h6 className="name">{item.title}</h6>
+                    </Link>
                   </div>
                 );
               })}

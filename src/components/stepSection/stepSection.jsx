@@ -1,3 +1,5 @@
+import Icon from "../../assets/service.png";
+
 const StepSection = ({ data }) => {
   let contents = data.content;
   return (
@@ -16,11 +18,9 @@ const StepSection = ({ data }) => {
             return (
               <div className="destination-single-item style-02" key={indx}>
                 <div className="thumbnail">
-                  <img src={item.imageLink} alt="" />
+                  <img src={Icon} alt="Icon" />
                 </div>
-                <h6 className="name">
-                  {item.title} <br /> {item.subtitle}
-                </h6>
+                <h6 className="name">Identify Section</h6>
               </div>
             );
           })}

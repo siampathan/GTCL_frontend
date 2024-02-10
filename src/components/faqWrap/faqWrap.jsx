@@ -1,33 +1,50 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+import { API_Link } from "../api/api";
+
 const FaqWrap = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    getItems();
+  }, []);
+
+  const getItems = async (req, res) => {
+    const response = await axios.get(`${API_Link}/faq/info`);
+    setItems(response.data);
+  };
+
   return (
     <div id="accordionOne">
-      <div className="card">
-        <div className="card-header" id="headingOne">
-          <h5 className="mb-0">
-            <a
-              className="collapsed"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="false"
-              aria-controls="collapseOne"
+      {items.map((item) => {
+        return (
+          <div className="card" key={item.id}>
+            <div className="card-header" id="headingOne">
+              <h5 className="mb-0">
+                <a
+                  className="collapsed"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target={`#collapse${item.id}`}
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  {item._question}
+                </a>
+              </h5>
+            </div>
+            <div
+              id={`collapse${item.id}`}
+              className="collapse"
+              data-bs-parent="#accordionOne"
             >
-              1. How is get admission in abroad university?
-            </a>
-          </h5>
-        </div>
-        <div
-          id="collapseOne"
-          className="collapse"
-          data-bs-parent="#accordionOne"
-        >
-          <div className="card-body">
-            Norway, USA, UK, Germany &amp; Italy is most safest country in the
-            world for Bangladeshi students for higer study.
+              <div className="card-body">{item._answer}</div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="card">
+        );
+      })}
+      {/* <div className="card">
         <div className="card-header" id="headingTwo">
           <h5 className="mb-0">
             <a
@@ -156,7 +173,7 @@ const FaqWrap = () => {
             world for Bangladeshi students for higer study.
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

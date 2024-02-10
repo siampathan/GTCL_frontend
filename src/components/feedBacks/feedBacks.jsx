@@ -1,4 +1,21 @@
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+import { API_Link } from "../api/api";
+
 const FeedBacks = ({ data }) => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    getItems();
+  }, []);
+
+  const getItems = async (req, res) => {
+    const response = await axios.get(`${API_Link}/stories/items`);
+    setItems(response.data);
+  };
+
   const contents = data.content;
   return (
     <section className="feedback-section margin-top-110">
@@ -44,16 +61,22 @@ const FeedBacks = ({ data }) => {
           </div>
         </div>
         <div className="row">
-          {contents?.map((item, indx) => {
+          {items?.map((item) => {
             return (
-              <div className="col-lg-3 col-md-6 col-sm-6" key={indx}>
+              <div className="col-lg-3 col-md-6 col-sm-6" key={item.id}>
                 <div className="image-box-item">
                   <div className="thumbnail">
-                    <img src={item.imageLink} alt="" />
-                    <a
-                      className="video-play-btn mfp-iframe"
-                      href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
-                    >
+                    <iframe
+                      width="400"
+                      height="400"
+                      src={item.url}
+                      title="Greenland Training Centre Ltd."
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      className="thumbnail"
+                    ></iframe>
+                    <Link className="video-play-btn mfp-iframe" to={item.link}>
                       <svg
                         width={14}
                         height={25}
@@ -66,10 +89,10 @@ const FeedBacks = ({ data }) => {
                           fill="white"
                         />
                       </svg>
-                    </a>
+                    </Link>
                     <div className="content">
-                      <h6 className="title">{item.title}</h6>
-                      <p>{item.desc}</p>
+                      <h6 className="title">{item.name}</h6>
+                      <p>{item.sub_title}</p>
                     </div>
                   </div>
                 </div>

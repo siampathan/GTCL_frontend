@@ -1,9 +1,23 @@
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { API_Link } from "../api/api";
 
-const Navbar = ({ data, data2, data3 }) => {
+import "./navbar-style.css";
+
+const Navbar = ({ data }) => {
+  const Icon_Logo = `https://glandgroup.com/public/images/0413202208543162568fc7bc454.png`;
+  const [dataItems, setDataItems] = useState([]);
+
+  useEffect(() => {
+    getDataItems();
+  }, []);
+
+  const getDataItems = async () => {
+    const response = await axios.get(`${API_Link}/header/title`);
+    setDataItems(response.data);
+  };
   let contents = data.content;
-  let contents2 = data2.content;
-  let contents3 = data3.content;
   return (
     <>
       <div className="nav-area-wrapper-relative nav_bg">
@@ -11,9 +25,13 @@ const Navbar = ({ data, data2, data3 }) => {
           <div className="container custom-container custom-container-01">
             <div className="responsive-menu">
               <div className="logo-wrapper">
-                <a href="index.html" className="logo">
-                  <img src={data.imageLink} alt="" />
-                </a>
+                <Link to="/" className="logo">
+                  <img
+                    src={Icon_Logo}
+                    alt="logo"
+                    style={{ height: 100, width: "100%" }}
+                  />
+                </Link>
               </div>
               <button
                 className="navbar-toggler navbar-bs-toggler"
@@ -28,48 +46,29 @@ const Navbar = ({ data, data2, data3 }) => {
             </div>
             <div className="collapse navbar-collapse" id="themeim_main_menu">
               <ul className="navbar-nav">
-                <li className="menu-item-has-children current-menu-item">
-                  <a href="#0">{data.title}</a>
-                  <ul className="sub-menu">
-                    {contents?.map((item, indx) => {
-                      return (
-                        <li key={indx}>
-                          <Link to={`/${item.link}`}>{item.title}</Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-                <li>
-                  <Link to={`/${data?.link}`}>{data?.title2}</Link>
-                </li>
-                <li className="menu-item-has-children">
-                  <a href="#">{data2?.title}</a>
-                  <ul className="sub-menu">
-                    {contents2?.map((item, indx) => {
-                      return (
-                        <li key={indx}>
-                          <Link to={`/${item.link}`}>{item.title}</Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-                <li className="menu-item-has-children">
-                  <a href="#">{data3?.title}</a>
-                  <ul className="sub-menu">
-                    {contents3.map((item, indx) => {
-                      return (
-                        <li key={indx}>
-                          <Link to={`/${item.link}`}>{item.title}</Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-                <li>
-                  <Link to={`/${data?.link2}`}>{data?.title3}</Link>
-                </li>
+                {dataItems
+                  ?.filter((item) => item._isTitle === 1)
+                  ?.map((item) => {
+                    return (
+                      <li
+                        className={`menu-item-has-children ${
+                          item._isTitle === 1 ? "current-menu-item" : ""
+                        }`}
+                        key={item._id}
+                      >
+                        <Link to={item._slug}>{item._menu}</Link>
+                        {item._isTitle === 1 && (
+                          <ul className="sub-menu">
+                            {dataItems?.map((item, indx) => (
+                              <li key={indx}>
+                                <Link to="#"> {item._menu} </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    );
+                  })}
               </ul>
             </div>
             <div className="nav-right-content">
@@ -82,11 +81,11 @@ const Navbar = ({ data, data2, data3 }) => {
                   </li>
                 </ul>
               </div>
-              <div className="btn-wrap">
+              {/* <div className="btn-wrap">
                 <a href="#" className="btn-common nav-btn">
-                  Free consultation
+                  consultation
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </nav>

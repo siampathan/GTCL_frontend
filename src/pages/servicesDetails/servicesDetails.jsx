@@ -1,46 +1,66 @@
-import DetailsSection from "../../components/detailsSection/detailsSection";
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+import { API_Link } from "../../components/api/api";
 
 const ServicesDetails = ({ data, data2, data3 }) => {
-  let contents = data2.content;
+  const [contents, setContents] = useState([]);
+
+  useEffect(() => {
+    getItems();
+  }, []);
+
+  const getItems = async () => {
+    const response = await axios.get(`${API_Link}/achieve/info`);
+    setContents(response.data);
+    console.log(response.data);
+  };
+  //let contents = data2.content;
   return (
     <div className="services-details-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
-      <DetailsSection data={data} />
+      {/* <DetailsSection data={data} /> */}
 
       <section className="about-section-area-wrapper section-top-space section-bottom-space">
         <div className="container custom-container-01">
-          <div className="row align-items-center row-reverse">
-            <div className="col-lg-6 col-md-12">
-              <div className="thumbnail ">
-                <div className="left-frame">
-                  <img src={data2?.imageLink} alt="" />
+          {contents?.map((item, indx) => {
+            return indx % 2 == 0 ? (
+              <div className={`row align-items-center`} key={item.id}>
+                <div className="col-lg-6 col-md-12">
+                  <div className="thumbnail ">
+                    <div className="">
+                      <img src={item.url} alt={item.image} />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12">
+                  <div className="about-content">
+                    <h3 className="content-title"> {item.title} </h3>
+                    <p className="paragraph">{item.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6 col-md-12">
-              <div className="about-content">
-                <h3 className="content-title">{data2?.title}</h3>
-                <p className="paragraph">{data2?.desc}</p>
-                <ul className="ul check-point-list style-01">
-                  {contents?.map((item, indx) => {
-                    return (
-                      <li className="single-check-point" key={indx}>
-                        <span className="icon-wrap">
-                          <i className="fa-solid fa-check icon" />
-                        </span>
-                        <span className="content">
-                          <p className="text">{item}</p>
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
+            ) : (
+              <div className={`row align-items-center`} key={item.id}>
+                <div className="col-lg-6 col-md-12">
+                  <div className="about-content">
+                    <h3 className="content-title"> {item.title} </h3>
+                    <p className="paragraph">{item.description}</p>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12">
+                  <div className="thumbnail ">
+                    <div className="">
+                      <img src={item.url} alt={item.image} />
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
 
-      <DetailsSection data={data3} />
+      {/* <DetailsSection data={data3} /> */}
     </div>
   );
 };

@@ -1,5 +1,20 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+import { API_Link } from "../../components/api/api";
+
 const Instructors = ({ data }) => {
-  let contents = data.content;
+  //let contents = data.content;
+  const [contents, setContents] = useState([]);
+
+  useEffect(() => {
+    getItems();
+  }, []);
+
+  const getItems = async () => {
+    const response = await axios.get(`${API_Link}/teachers/info`);
+    setContents(response.data);
+  };
   return (
     <div className="instructors-wrapper single-page-section-top-space single-page-section-bottom-space nav_bg">
       <div className="breadcrumb-wrap style-01">
@@ -18,12 +33,12 @@ const Instructors = ({ data }) => {
         <div className="our-team-inner">
           <div className="container custom-container-01">
             <div className="row column-gap-50">
-              {contents?.map((item, indx) => {
+              {contents?.map((item) => {
                 return (
-                  <div className="col-md-6 col-lg-6 col-xl-4" key={indx}>
+                  <div className="col-md-6 col-lg-6 col-xl-4" key={item.id}>
                     <div className="single-team-item style-03">
                       <div className="thumbnail">
-                        <img src={item.imageLink} alt="team image" />
+                        <img src={item.url} alt={item.image} />
                       </div>
                       <div className="content">
                         <h4 className="title">
@@ -31,8 +46,8 @@ const Instructors = ({ data }) => {
                             {item.title}
                           </a>
                         </h4>
-                        <p className="designation">{item.position}</p>
-                        <p className="paragraph">{item.desc}</p>
+                        <p className="designation">{item.designation}</p>
+                        <p className="paragraph">{item.description}</p>
                       </div>
                       <div className="hover-content">
                         <div className="btn-wrap">
