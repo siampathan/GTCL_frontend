@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import { API_Link } from "../../components/api/api";
@@ -36,61 +37,32 @@ const Instructors = ({ data }) => {
               {contents?.map((item) => {
                 return (
                   <div className="col-md-6 col-lg-6 col-xl-4" key={item.id}>
-                    <div className="single-team-item style-03">
-                      <div className="thumbnail">
-                        <img src={item.url} alt={item.image} />
-                      </div>
-                      <div className="content">
-                        <h4 className="title">
-                          <a href="#" tabIndex={-1}>
-                            {item.title}
-                          </a>
-                        </h4>
-                        <p className="designation">{item.designation}</p>
-                        <p className="paragraph">{item.description}</p>
-                      </div>
-                      <div className="hover-content">
-                        <div className="btn-wrap">
-                          <div className="btn-common btn-active">Read More</div>
+                    <Link to={`/teacher-details/${item.id}`}>
+                      <div className="single-team-item style-03">
+                        <div className="thumbnail">
+                          <img src={item.url} alt={item.image} />
+                        </div>
+                        <div className="content">
+                          <h4 className="title">
+                            <a href="#" tabIndex={-1}>
+                              {item.title}
+                            </a>
+                          </h4>
+                          <p className="designation">{item.designation}</p>
+                          <p className="paragraph">{item.description}</p>
+                        </div>
+                        <div className="hover-content">
+                          <div className="btn-wrap">
+                            <div className="btn-common btn-active">
+                              Read More
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 );
               })}
-            </div>
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="pagination">
-                  <ul className="pagination-list">
-                    <li>
-                      <a href="#" className="page-number able left-arrow">
-                        PREV
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="page-number current">
-                        01
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="page-number">
-                        02
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="page-number">
-                        03
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="page-number able right-arrow">
-                        NEXT
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>

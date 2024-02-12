@@ -13,8 +13,8 @@ import axios from "axios";
 import { API_Link } from "../api/api";
 
 const AboutUs = ({ data, data2, data3, data4 }) => {
-  let contents = data.content;
-  let contents2 = data3.content;
+  // let contents = data.content;
+  // let contents2 = data3.content;
 
   const [contents3, setContents] = useState([]);
   const [items, setItems] = useState([]);
@@ -72,13 +72,12 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
             </div>
             <div className="row">
               <div className="col-lg-12">
-                <div className="slider-wrapper">
-                  <div className="slick-main slick-main global-slick-init dots-style-03 dots-space">
-                    <Slider {...settings}>
-                      {sliders.map((slid, indx) => {
-                        return (
-                          <div className="slick-item" key={indx}>
-                            <div className="course-single-item">
+                <div className="slick-main slick-main global-slick-init dots-style-03 dots-space">
+                  <Slider {...settings}>
+                    {sliders.map((slid, indx) => {
+                      return (
+                        <div className="slick-item" key={indx}>
+                          {/* <div className="course-single-item">
                               <div className="thumbnail slide-image">
                                 <img src={slid.url} alt="" />
                               </div>
@@ -88,12 +87,21 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
                                   {slid.description}
                                 </h6>
                               </div>
+                            </div> */}
+                          <div className="single-team-item style-01">
+                            <div className="thumbnail">
+                              <img src={slid.url} alt={slid.image} />
+                            </div>
+
+                            <div className="content">
+                              <h4 className="title">{slid.title}</h4>
+                              <p className="designation">Test Designation</p>
                             </div>
                           </div>
-                        );
-                      })}
-                    </Slider>
-                  </div>
+                        </div>
+                      );
+                    })}
+                  </Slider>
                 </div>
               </div>
             </div>
@@ -101,7 +109,7 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
         </div>
       </section>
 
-      <section className="counter-area-wrapper">
+      <section className="counter-area-wrapper" style={{ marginTop: "-90px" }}>
         <div className="counter-section-area">
           <div className="container custom-container-01">
             <div className="row">
@@ -124,17 +132,12 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
               className="chose-area-inner bg-color-01"
               style={{ backgroundColor: "#81ca99" }}
             >
-              <div
-                className="bg-image background-image"
-                style={{
-                  backgroundImage: `url(${item?._url})`,
-                  marginLeft: "70px",
-                }}
-              ></div>
               <div className="container custom-container-01">
                 <div className="row justify-content-end">
                   <div className="col-lg-6">
-                    <div className="img-box"></div>
+                    <div className="img-box">
+                      <img src={item._url} alt={item._image} />
+                    </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="content-wrap">
@@ -164,13 +167,12 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <div className="slider-wrapper">
-                <div className="slick-main slick-main global-slick-init dots-style-03 dots-space">
-                  <Slider {...settings}>
-                    {sliders.map((slid, indx) => {
-                      return (
-                        <div className="slick-item" key={indx}>
-                          {/* <div className="course-single-item">
+              <div className="slick-main global-slick-init">
+                <Slider {...settings}>
+                  {sliders.map((slid, indx) => {
+                    return (
+                      <div className="slick-item" key={indx}>
+                        {/* <div className="course-single-item">
                             <div className="thumbnail slide-image">
                               <img src={slid.url} alt="" />
                             </div>
@@ -181,30 +183,29 @@ const AboutUs = ({ data, data2, data3, data4 }) => {
                               </h6>
                             </div>
                           </div> */}
-                          <div class="testimonial-single-items style-01 v-02">
-                            <div class="content">
-                              <p class="feedback-text">{slid.description}</p>
-                            </div>
+                        <div class="testimonial-single-items style-01 v-02">
+                          <div class="content">
+                            <p class="feedback-text">{slid.description}</p>
+                          </div>
 
-                            <div class="client-and-quote">
-                              <div class="client-details">
-                                <div class="thumb">
-                                  <img src={slid.url} alt={slid.image} />
-                                </div>
-                                <div class="content">
-                                  <p class="client-name"> {slid.title} </p>
-                                  <p class="designation">
-                                    Central African Republic
-                                  </p>
-                                </div>
+                          <div class="client-and-quote">
+                            <div class="client-details">
+                              <div class="thumb">
+                                <img src={slid.url} alt={slid.image} />
+                              </div>
+                              <div class="content">
+                                <p class="client-name"> {slid.title} </p>
+                                <p class="designation">
+                                  Central African Republic
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
-                      );
-                    })}
-                  </Slider>
-                </div>
+                      </div>
+                    );
+                  })}
+                </Slider>
               </div>
             </div>
           </div>

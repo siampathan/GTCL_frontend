@@ -10,6 +10,7 @@ import NewsSection from "../newsSection/newsSection";
 import StepSection from "../stepSection/stepSection";
 import { useState, useEffect } from "react";
 import { API_Link } from "../api/api";
+import RegisterForm from "../registerForm/registerForm";
 
 const Home = ({
   data,
@@ -46,6 +47,7 @@ const Home = ({
         <StepSection data={data7} />
         <NewsSection data={data8} />
         <FaqSection data={data9} data2={data10} />
+        <RegisterForm />
       </div>
     </>
   );

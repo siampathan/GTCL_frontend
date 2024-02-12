@@ -26,6 +26,12 @@ const Footer = ({ data }) => {
     return listItems;
   };
 
+  const setDate = () => {
+    const presentDate = new Date();
+    const year = presentDate.getFullYear();
+    return year;
+  };
+
   return (
     <footer className="footer-area style-01">
       <div className="footer-top">
@@ -57,10 +63,7 @@ const Footer = ({ data }) => {
           <div className="row">
             <div className="col-lg-12">
               <div className="copyright-area-inner">
-                <p>
-                  {data?.copyright_desc}
-                  <span>{data?.sub_copyright}</span>
-                </p>
+                <p>{`© ${setDate()} GTCL. All rights reserved | Developed By Softin`}</p>
                 <div className="footer-social-area">
                   <ul className="social-icon-02">
                     <li>

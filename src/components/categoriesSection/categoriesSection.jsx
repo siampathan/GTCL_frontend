@@ -72,7 +72,7 @@ const CategoriesSection = ({ data }) => {
                     className="destination-single-item style-01 shadow"
                     key={item.id}
                   >
-                    <Link to={``}>
+                    <Link to={`/course-details/${item.id}`}>
                       <div className="thumbnail">
                         <img src={item.url} alt="photo" />
                       </div>

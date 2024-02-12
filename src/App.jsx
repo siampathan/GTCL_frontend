@@ -57,6 +57,7 @@ import BlogDetails from "./components/blogDetails/blogDetails";
 import Home2 from "./components/home2/home2";
 import CourseDetails from "./pages/courseDetails/courseDetails";
 import TeacherDetails from "./pages/teacherDetails/teacherDetails";
+// import CourseSingle from "./pages/courseSingle/courseSingle";
 
 function App() {
   return (
@@ -241,7 +242,7 @@ function App() {
           }
         />
         <Route path="/teacher-details/:id" element={<TeacherDetails />} />
-        <Route path="/course-details/:id" element={</>} />
+        <Route path="/course-details/:id" element={<BlogDetails />} />
       </Routes>
       <Footer data={Footer_section[0]} data2={Footer_section[1]} />
     </>

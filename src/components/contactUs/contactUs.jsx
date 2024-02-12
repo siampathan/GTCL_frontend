@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { API_Link } from "../api/api";
 
@@ -13,7 +15,12 @@ const ContactUs = ({ data }) => {
   const getData = async () => {
     const response = await axios.get(`${API_Link}/company/info`);
     setItems(response.data);
-    // console.log(response.data);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    toast.success("Form Submitted Successfully !");
   };
 
   return (
@@ -69,11 +76,6 @@ const ContactUs = ({ data }) => {
                       <ul className="ul social-media-list style-01 color-02">
                         <li className="single-social-item">
                           <a href="#" tabIndex={-1}>
-                            <i className="fa-brands fa-instagram icon" />
-                          </a>
-                        </li>
-                        <li className="single-social-item">
-                          <a href="#" tabIndex={-1}>
                             <i className="fa-brands fa-facebook-f icon" />
                           </a>
                         </li>
@@ -92,7 +94,7 @@ const ContactUs = ({ data }) => {
                   </div>
                   <div className="col-lg-7">
                     <div className="contact-form">
-                      <form className="form">
+                      <form className="form" onSubmit={handleSubmit}>
                         <div className="part">
                           <h5 className="title">Primary Information</h5>
                           <div className="form-element">
@@ -155,6 +157,7 @@ const ContactUs = ({ data }) => {
                           >
                             {data?.buttonContent}
                           </button>
+                          <ToastContainer />
                         </div>
                       </form>
                     </div>
