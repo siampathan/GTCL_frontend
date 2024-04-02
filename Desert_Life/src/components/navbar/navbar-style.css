@@ -1,0 +1,170 @@
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: #fff;
+}
+a:focus {
+  color: #fff;
+}
+a:active {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul > li > a.active {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(218, 214, 214);
+}
+
+.navbar {
+  max-width: 100%;
+  height: 10vh;
+  background-color: #0269b3;
+  background-image: linear-gradient(#0269b3, #131aad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+  position: relative;
+  background-color: #1983cf;
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    max-width: 100%;
+    height: 15vh;
+    background-color: #0269b3;
+    background-image: linear-gradient(#0269b3, #131aad);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+    position: relative;
+    background-color: #1983cf;
+  }
+
+  .navbar > .logo {
+    margin-top: 15px;
+  }
+
+  .content_text {
+    margin-top: -40px;
+  }
+}
+
+.navbar > .logo {
+  width: 7rem;
+  height: auto;
+}
+
+.sidebar__logo {
+  width: 7rem;
+  height: auto;
+}
+
+.sidebar__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar > .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.link__wrap {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.link__wrap ul li {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.link__wrap ul li:hover {
+  color: rgb(95, 90, 90);
+  cursor: pointer;
+}
+
+.content_text {
+  display: flex;
+  margin-top: 5px;
+}
+
+.content_text ul {
+  display: flex;
+  gap: 20px;
+}
+
+.content_text ul li {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.wrap_line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+.line {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(248, 245, 245);
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1090px) {
+  .wrap_line {
+    display: block;
+  }
+
+  .content_text ul {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #8a8888;
+    font-weight: 700;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #ec7140;
+  }
+
+  a:focus {
+    color: #ec7140;
+  }
+
+  .navbar {
+    max-width: 100%;
+    display: flex;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    display: flex;
+    gap: 4rem;
+    padding: 0 5rem;
+  }
+}

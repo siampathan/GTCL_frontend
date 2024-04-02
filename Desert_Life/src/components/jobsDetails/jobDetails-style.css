@@ -1,0 +1,10 @@
+.img__wrap__contain {
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.img__wrap__contain img {
+  width: 100%;
+  height: 100%;
+}

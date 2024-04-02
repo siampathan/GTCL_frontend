@@ -1,0 +1,25 @@
+.achivment_wrap {
+  width: 100%;
+}
+
+.achivement_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.custom-container {
+  margin: 20px auto;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.content_wrap h3 {
+  font-size: 40px;
+}
+
+.content_wrap p {
+  font-size: 16px;
+}

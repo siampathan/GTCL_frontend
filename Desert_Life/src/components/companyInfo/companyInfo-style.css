@@ -1,0 +1,7 @@
+.image_wrap {
+  max-width: 15rem;
+}
+
+.image_wrap img {
+  width: 100%;
+}

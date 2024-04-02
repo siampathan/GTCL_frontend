@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav_wrap {
+  position: sticky;
+  top: 0;
+}
+
+.box-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.img-wrap {
+  width: 10rem;
+  height: auto;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.btn__color {
+  background-color: coral;
+}
+
+.spinner-container {
+  background-color: #111;
+  width: 100%;
+  height: 60vh;
+}
+
+.spinner-container > .loader {
+  position: absolute;
+  top: 23rem;
+  left: 50%;
+}
+
+.breadcrumb-section {
+  height: 250px;
+  width: 100%;
+  background-image: url("../src/assets/img/bred.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.breadcrumb-section > h2 {
+  color: #fff;
+  margin: 0px 90px;
+  padding-top: 40px;
+}

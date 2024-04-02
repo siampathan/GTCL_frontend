@@ -1,0 +1,32 @@
+.img__wrap {
+  width: 400px;
+  height: 60vh;
+  margin-top: 60px;
+}
+
+.img__wrap img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrap-txt p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+  .content_wrap h3 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .wrap__left {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrap__left {
+    margin-top: 5px;
+  }
+}

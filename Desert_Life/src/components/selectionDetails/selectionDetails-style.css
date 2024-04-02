@@ -1,0 +1,9 @@
+.selection__wrap {
+  max-width: 100rem;
+  height: 50vh;
+  margin: 30px auto;
+}
+
+.wrap__content {
+  text-align: justify;
+}

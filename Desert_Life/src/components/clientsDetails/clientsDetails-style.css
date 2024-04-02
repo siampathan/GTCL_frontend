@@ -1,0 +1,23 @@
+.clients_details_wrap {
+  max-width: 55rem;
+  padding: 10px 30px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img_wrap {
+  margin: 0 auto;
+  max-width: 10rem;
+}
+
+.img_wrap img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.description p {
+  font-size: 17px;
+}

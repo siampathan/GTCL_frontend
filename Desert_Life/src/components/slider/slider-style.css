@@ -1,0 +1,108 @@
+.carousel-item {
+  height: 90vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and(max-width: 800px) {
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+/* .carousel-caption {
+  max-width: 600px;
+  background-color: #11111180;
+  margin-bottom: 5rem;
+}
+.carousel-caption > button {
+  font-size: 18px;
+}
+
+.carousel-caption > h5 {
+  font-size: 25px;
+  text-shadow: 2px 4px 8px #111;
+}
+
+.carousel-caption > p {
+  font-weight: 800;
+  font-size: 20px;
+  text-shadow: 2px 4px 8px #111;
+} */
+
+.carousel-caption {
+  max-width: 600px; /* Adjust as needed */
+  background-color: #11111180;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Or 'flex-start' or 'flex-end' */
+  padding: 20px;
+  margin-bottom: 0; /* Remove margin-bottom */
+}
+
+.carousel-caption > button {
+  font-size: 18px;
+}
+
+.carousel-caption > h5 {
+  font-size: 25px;
+  text-shadow: 2px 4px 8px #111;
+}
+
+.carousel-caption > p {
+  font-weight: 800;
+  font-size: 20px;
+  text-shadow: 2px 4px 8px #111;
+}
+
+@media screen and (max-width: 1150px) {
+  .carousel-caption > h5 {
+    font-size: 25px;
+  }
+
+  .carousel-caption > p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-caption {
+    margin-right: 80px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-caption {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-caption {
+    width: 350px;
+    margin: 0 auto;
+    padding: 70px;
+  }
+}
+
+.carousel-control-prev-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #111;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #111;
+  border-radius: 50%;
+  opacity: 1;
+}

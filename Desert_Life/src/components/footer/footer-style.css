@@ -1,0 +1,24 @@
+.footer {
+  background-color: #0269b3;
+  background-image: linear-gradient(#0269b3, #131aad);
+  color: #fff;
+}
+
+.footer__widget-logo {
+  filter: drop-shadow(0 0 0.75rem rgb(226, 224, 224));
+}
+
+.footer__widget > ul > li a {
+  color: #fff;
+}
+
+.text-right ul li a {
+  color: #fff;
+}
+
+.logo_wrap {
+  width: 10rem;
+  height: 7rem;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
