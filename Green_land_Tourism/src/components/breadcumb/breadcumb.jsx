@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const BreadCumb = ({ location }) => {
+const BreadCumb = ({ title, location }) => {
   useEffect(() => {
     const elementsWithDataBgSrc = document.querySelectorAll("[data-bg-src]");
 
@@ -21,7 +21,7 @@ const BreadCumb = ({ location }) => {
       >
         <div className="container">
           <div className="breadcumb-content">
-            <h1 className="breadcumb-title">Contact Us</h1>
+            <h1 className="breadcumb-title">{title}</h1>
             <ul className="breadcumb-menu">
               <li>
                 <Link to="/">Home</Link>

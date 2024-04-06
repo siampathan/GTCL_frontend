@@ -4,7 +4,7 @@ import SubscriptionArea from "../../components/subscriptionArea/subscriptionArea
 const TeamPage = () => {
   return (
     <>
-      <BreadCumb location={"Our Team"} />
+      <BreadCumb location={"Our Team"} title={"Our Team"} />
 
       <section className="space-top space-extra-bottom">
         <div className="container">

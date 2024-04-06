@@ -3,7 +3,7 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-const CounterUp = () => {
+const CounterUp = ({ color }) => {
   const [counterOn, setCounterOn] = useState(false);
   return (
     <>
@@ -20,6 +20,7 @@ const CounterUp = () => {
                     <ScrollTrigger
                       onEnter={() => setCounterOn(true)}
                       onExit={() => setCounterOn(false)}
+                      className={color}
                     >
                       <span className="counter-number">
                         {counterOn && (
@@ -34,13 +35,13 @@ const CounterUp = () => {
                       +
                     </ScrollTrigger>
                   </h2>
-                  <p className="counter-card_text">Our Explorers</p>
+                  <p className={`counter-card_text ${color}`}>Our Explorers</p>
                 </div>
               </div>
             </div>
             <div className="col-6 col-lg-3 counter-card-wrap">
               <div className="counter-card">
-                <div className="counter-card_icon">
+                <div className={`counter-card_icon ${color}`}>
                   <img src="/src/assets/img/icon/counter_1_2.svg" alt="icon" />
                 </div>
                 <div className="media-body">
@@ -48,6 +49,7 @@ const CounterUp = () => {
                     <ScrollTrigger
                       onEnter={() => setCounterOn(true)}
                       onExit={() => setCounterOn(false)}
+                      className={color}
                     >
                       <span className="counter-number">
                         {counterOn && (
@@ -62,7 +64,7 @@ const CounterUp = () => {
                       +
                     </ScrollTrigger>
                   </h2>
-                  <p className="counter-card_text">Destinations</p>
+                  <p className={`counter-card_text ${color}`}>Destinations</p>
                 </div>
               </div>
             </div>
@@ -76,6 +78,7 @@ const CounterUp = () => {
                     <ScrollTrigger
                       onEnter={() => setCounterOn(true)}
                       onExit={() => setCounterOn(false)}
+                      className={color}
                     >
                       <span className="counter-number">
                         {counterOn && (
@@ -90,7 +93,7 @@ const CounterUp = () => {
                       +
                     </ScrollTrigger>
                   </h2>
-                  <p className="counter-card_text">More Trips</p>
+                  <p className={`counter-card_text ${color}`}>More Trips</p>
                 </div>
               </div>
             </div>
@@ -104,6 +107,7 @@ const CounterUp = () => {
                     <ScrollTrigger
                       onEnter={() => setCounterOn(true)}
                       onExit={() => setCounterOn(false)}
+                      className={color}
                     >
                       <span className="counter-number">
                         {counterOn && (
@@ -118,7 +122,7 @@ const CounterUp = () => {
                       +
                     </ScrollTrigger>
                   </h2>
-                  <p className="counter-card_text">Luxary Hotel</p>
+                  <p className={`counter-card_text ${color}`}>Luxary Hotel</p>
                 </div>
               </div>
             </div>

@@ -227,10 +227,10 @@ const Navbar = () => {
                         <a href="#">Tour Types</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="tour.html">Tour</a>
+                            <Link to="/tour">Tour</Link>
                           </li>
                           <li>
-                            <a href="tour-details.html">Tour Details</a>
+                            <Link to="/tour-details">Tour Details</Link>
                           </li>
                         </ul>
                       </li>
@@ -238,7 +238,7 @@ const Navbar = () => {
                         <a href="#">Pages</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="about.html">About Us</a>
+                            <Link to="/about">About Us</Link>
                           </li>
                           <li>
                             <Link to="/team">Team</Link>
@@ -247,7 +247,7 @@ const Navbar = () => {
                             <Link to="/team-details">Team Details</Link>
                           </li>
                           <li>
-                            <a href="gallery.html">Gallery</a>
+                            <Link to="/gallery">Gallery</Link>
                           </li>
                           <li>
                             <a href="error.html">Error Page</a>
@@ -258,10 +258,10 @@ const Navbar = () => {
                         <a href="#">Blog</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="blog.html">Blog</a>
+                            <Link to="/blog">Blog</Link>
                           </li>
                           <li>
-                            <a href="blog-details.html">Blog Details</a>
+                            <Link to="/blog-details">Blog Details</Link>
                           </li>
                         </ul>
                       </li>
