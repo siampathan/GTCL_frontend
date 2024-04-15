@@ -6598,7 +6598,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 }
 
 /*------------------- 4.00. Popup Side Menu  -------------------*/
-.sidemenu-wrapper {
+/* .sidemenu-wrapper {
   position: fixed;
   z-index: 99999;
   right: 0;
@@ -6685,6 +6685,56 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   right: 0;
   opacity: 1;
   visibility: visible;
+} */
+
+.sidemenu-wrapper {
+  position: fixed;
+  top: 0;
+  right: -120rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.sidemenu-wrapper .closeButton {
+  display: inline-block;
+  border: 2px solid;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.sidemenu-wrapper .closeButton:hover {
+  color: var(--theme-color);
+  border-color: var(--theme-color);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.sidemenu-wrapper > .sidemenu-content {
+  width: 450px;
+  height: 100%;
+  background-color: #161921;
+  margin-left: auto;
+  overflow: scroll;
+  padding: 80px 30px;
+  position: relative;
 }
 
 /*------------------- 4.00. Contact  -------------------*/

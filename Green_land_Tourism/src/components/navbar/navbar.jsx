@@ -3,6 +3,135 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
+      {/* sidebar  start*/}
+      <div className="sidemenu-wrapper">
+        <div className="sidemenu-content">
+          <button className="closeButton sideMenuCls">
+            <i className="far fa-times" />
+          </button>
+          <div className="widget footer-widget">
+            <div className="ot-widget-about">
+              <div className="about-logo">
+                <a href="index.html">
+                  <img src="src/assets/img/logo-white.svg" alt="Travon" />
+                </a>
+              </div>
+              <p className="about-text">
+                Globally communicate adaptive e-markets &amp; timely
+                manufactured product. Objectively exploit collaborative
+                relationships vis-a-vis competitive manufactured.
+              </p>
+              <div className="ot-social">
+                <a href="https://www.facebook.com/">
+                  <i className="fab fa-facebook-f" />
+                </a>
+                <a href="https://www.twitter.com/">
+                  <i className="fab fa-twitter" />
+                </a>
+                <a href="https://www.linkedin.com/">
+                  <i className="fab fa-linkedin-in" />
+                </a>
+                <a href="https://www.instagram.com/">
+                  <i className="fab fa-instagram" />
+                </a>
+                <a href="https://www.whatsapp.com/">
+                  <i className="fab fa-whatsapp" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="widget footer-widget">
+            <h3 className="widget_title">Recent Posts</h3>
+            <div className="recent-post-wrap">
+              <div className="recent-post">
+                <div className="media-img">
+                  <a href="blog-details.html">
+                    <img
+                      src="src/assets/img/blog/recent-post-2-1.jpg"
+                      alt="Blog Image"
+                    />
+                  </a>
+                </div>
+                <div className="media-body">
+                  <h4 className="post-title">
+                    <a className="text-inherit" href="blog-details.html">
+                      5 Ways to Get Your Dream Photos On Picnic
+                    </a>
+                  </h4>
+                  <div className="recent-post-meta">
+                    <a href="blog.html">
+                      <i className="fal fa-calendar-days" />
+                      21 June, 2023
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="recent-post">
+                <div className="media-img">
+                  <a href="blog-details.html">
+                    <img
+                      src="src/assets/img/blog/recent-post-2-2.jpg"
+                      alt="Blog Image"
+                    />
+                  </a>
+                </div>
+                <div className="media-body">
+                  <h4 className="post-title">
+                    <a className="text-inherit" href="blog-details.html">
+                      9 Essential Tips For Making the Most of Your
+                    </a>
+                  </h4>
+                  <div className="recent-post-meta">
+                    <a href="blog.html">
+                      <i className="fal fa-calendar-days" />
+                      22 June, 2023
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="widget footer-widget">
+            <h3 className="widget_title">Contact Us</h3>
+            <div className="ot-widget-contact">
+              <div className="info-box">
+                <div className="info-box_icon">
+                  <i className="fas fa-location-dot" />
+                </div>
+                <p className="info-box_text">
+                  5807 W 63rd St, Chicago, IL 60638, United States
+                </p>
+              </div>
+              <div className="info-box">
+                <div className="info-box_icon">
+                  <i className="fas fa-phone" />
+                </div>
+                <p className="info-box_text">
+                  <a href="tel:+11234567890" className="info-box_link">
+                    +(1) 123 456 7890
+                  </a>
+                  <a href="tel:+10987654321" className="info-box_link">
+                    +(1) 098 765 4321
+                  </a>
+                </p>
+              </div>
+              <div className="info-box">
+                <div className="info-box_icon">
+                  <i className="fas fa-envelope" />
+                </div>
+                <p className="info-box_text">
+                  <a href="mailto:info@travon.com" className="info-box_link">
+                    info@travon.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* sidebar end */}
+
       <div className="sidemenu-wrapper d-none d-lg-block">
         <div className="sidemenu-content">
           <button className="closeButton sideMenuCls">
@@ -277,7 +406,7 @@ const Navbar = () => {
                     <i className="far fa-bars" />
                   </button>
                 </div>
-                <div className="col-auto d-none d-xl-block">
+                <div className="col-auto">
                   <div className="header-button">
                     <button type="button" className="icon-btn searchBoxToggler">
                       <i className="far fa-search" />

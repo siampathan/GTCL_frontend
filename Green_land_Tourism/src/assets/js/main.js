@@ -500,63 +500,78 @@
   });
 
   /*---------- 09. Popup Sidemenu ----------*/
-  function popupSideMenu($sideMenu, $sideMunuOpen, $sideMenuCls, $toggleCls) {
-    // Sidebar Popup
-    $($sideMunuOpen).on("click", function (e) {
-      e.preventDefault();
-      $($sideMenu).addClass($toggleCls);
+  //function popupSideMenu($sideMenu, $sideMunuOpen, $sideMenuCls, $toggleCls) {
+  // Sidebar Popup
+  //   $($sideMunuOpen).on("click", function (e) {
+  //     e.preventDefault();
+  //     $($sideMenu).addClass($toggleCls);
+  //   });
+  //   $($sideMenu).on("click", function (e) {
+  //     e.stopPropagation();
+  //     $($sideMenu).removeClass($toggleCls);
+  //   });
+  //   var sideMenuChild = $sideMenu + " > div";
+  //   $(sideMenuChild).on("click", function (e) {
+  //     e.stopPropagation();
+  //     $($sideMenu).addClass($toggleCls);
+  //   });
+  //   $($sideMenuCls).on("click", function (e) {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //     $($sideMenu).removeClass($toggleCls);
+  //   });
+  // }
+  // popupSideMenu(
+  //   ".sidemenu-wrapper",
+  //   ".sideMenuToggler",
+  //   ".sideMenuCls",
+  //   "show"
+  // );
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const sideMenuWrapper = document.querySelector(".sidemenu-wrapper");
+    const sideMenuToggler = document.querySelector(".sideMenuToggler");
+    const closeBtn = document.querySelector(".closeButton");
+
+    closeBtn.addEventListener("click", () => {
+      console.log("close function is working");
+      sideMenuWrapper.style.right = "-120rem";
     });
-    $($sideMenu).on("click", function (e) {
-      e.stopPropagation();
-      $($sideMenu).removeClass($toggleCls);
+
+    sideMenuToggler.addEventListener("click", () => {
+      console.log("Click this function");
+      sideMenuWrapper.style.right = "0";
     });
-    var sideMenuChild = $sideMenu + " > div";
-    $(sideMenuChild).on("click", function (e) {
-      e.stopPropagation();
-      $($sideMenu).addClass($toggleCls);
-    });
-    $($sideMenuCls).on("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $($sideMenu).removeClass($toggleCls);
-    });
-  }
-  popupSideMenu(
-    ".sidemenu-wrapper",
-    ".sideMenuToggler",
-    ".sideMenuCls",
-    "show"
-  );
+  });
 
   /*---------- 10. Search Box Popup ----------*/
-  function popupSarchBox($searchBox, $searchOpen, $searchCls, $toggleCls) {
-    $($searchOpen).on("click", function (e) {
-      e.preventDefault();
-      $($searchBox).addClass($toggleCls);
-    });
-    $($searchBox).on("click", function (e) {
-      e.stopPropagation();
-      $($searchBox).removeClass($toggleCls);
-    });
-    $($searchBox)
-      .find("form")
-      .on("click", function (e) {
-        e.stopPropagation();
-        $($searchBox).addClass($toggleCls);
-      });
-    $($searchCls).on("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $($searchBox).removeClass($toggleCls);
-    });
-  }
-  popupSarchBox(
-    ".popup-search-box",
-    ".searchBoxToggler",
-    ".searchClose",
-    "show"
-  );
-
+  // function popupSarchBox($searchBox, $searchOpen, $searchCls, $toggleCls) {
+  //   $($searchOpen).on("click", function (e) {
+  //     e.preventDefault();
+  //     $($searchBox).addClass($toggleCls);
+  //   });
+  //   $($searchBox).on("click", function (e) {
+  //     e.stopPropagation();
+  //     $($searchBox).removeClass($toggleCls);
+  //   });
+  //   $($searchBox)
+  //     .find("form")
+  //     .on("click", function (e) {
+  //       e.stopPropagation();
+  //       $($searchBox).addClass($toggleCls);
+  //     });
+  //   $($searchCls).on("click", function (e) {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //     $($searchBox).removeClass($toggleCls);
+  //   });
+  // }
+  // popupSarchBox(
+  //   ".popup-search-box",
+  //   ".searchBoxToggler",
+  //   ".searchClose",
+  //   "show"
+  // );
   /*----------- 11. Magnific Popup ----------*/
   /* magnificPopup img view */
   $(".popup-image").magnificPopup({
