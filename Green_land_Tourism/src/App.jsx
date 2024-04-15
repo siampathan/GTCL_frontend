@@ -21,9 +21,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Scroll to top on every route change
     window.scrollTo({ top: 0, behavior: "smooth" });
-    console.log(location); // Smooth scrolling
   }, [location]);
 
   return (

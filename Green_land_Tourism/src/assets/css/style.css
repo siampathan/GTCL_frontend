@@ -6699,6 +6699,12 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   transition: all ease 0.8s;
 }
 
+@media screen and (max-width: 991px) {
+  .header-button {
+    display: none;
+  }
+}
+
 .sidemenu-wrapper .closeButton {
   display: inline-block;
   border: 2px solid;

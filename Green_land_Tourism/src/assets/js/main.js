@@ -542,6 +542,44 @@
       console.log("Click this function");
       sideMenuWrapper.style.right = "0";
     });
+
+    // search box popup
+    function popupSearchBox(searchBox, searchOpen, searchClose, toggleClass) {
+      document
+        .querySelector(searchOpen)
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(searchBox).classList.add(toggleClass);
+        });
+
+      document.querySelector(searchBox).addEventListener("click", function (e) {
+        e.stopPropagation();
+        document.querySelector(searchBox).classList.remove(toggleClass);
+      });
+
+      document
+        .querySelector(searchBox)
+        .querySelector("form")
+        .addEventListener("click", function (e) {
+          e.stopPropagation();
+          document.querySelector(searchBox).classList.add(toggleClass);
+        });
+
+      document
+        .querySelector(searchClose)
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          document.querySelector(searchBox).classList.remove(toggleClass);
+        });
+    }
+
+    popupSearchBox(
+      ".popup-search-box",
+      ".searchBoxToggler",
+      ".searchClose",
+      "show"
+    );
   });
 
   /*---------- 10. Search Box Popup ----------*/
@@ -572,6 +610,7 @@
   //   ".searchClose",
   //   "show"
   // );
+
   /*----------- 11. Magnific Popup ----------*/
   /* magnificPopup img view */
   $(".popup-image").magnificPopup({

@@ -129,10 +129,24 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* sidebar end */}
 
-      <div className="sidemenu-wrapper d-none d-lg-block">
+      {/* popup search box start */}
+      <div className="popup-search-box d-none d-lg-block">
+        <button className="searchClose">
+          <i className="fal fa-times" />
+        </button>
+        <form action="">
+          <input type="text" placeholder="What are you looking for?" />
+          <button type="submit">
+            <i className="fal fa-search" />
+          </button>
+        </form>
+      </div>
+
+      {/* popup search box end */}
+
+      {/* <div className="sidemenu-wrapper d-none d-lg-block">
         <div className="sidemenu-content">
           <button className="closeButton sideMenuCls">
             <i className="far fa-times" />
@@ -256,7 +270,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <header className="ot-header header-layout1">
         <div className="header-top">
@@ -313,6 +327,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         <div className="sticky-wrapper">
           {/* Main Menu Area */}
           <div className="menu-area">
